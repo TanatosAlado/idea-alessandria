@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/contacto3.css">
+    <title>Agua Estrada + Vida</title>
+</head>
+<body class="body">
+    <main>
+    <header class="rowFlex">
+        <img src="../assets/logo.ico" alt="logo">
+		<ul class="navFlex">
+			<li class="navFlex__item1"><a href="../index.html"><strong>Inicio</strong></a></li>
+			<li class="navFlex__item2"><a href="productos.html"><strong>Productos</strong></a></li>
+			<li class="navFlex__item3"><a href="sobrenosotros.html"><strong>Nosotros</strong></a></li>
+			<li class="navFlex__item4"><a href="tratamiento.html"><strong>Tratamiento</strong></a></li>
+			<li class="navFlex__item4"><a href="contacto.html"><strong>Contacto</strong></a></li>
+		</ul>
+    </header>
+    <section class="posicion">
+            <section class="englobador">
+                <form action="#">
+                    <fieldset>
+                        <h3><h3>Datos de Contacto</h3>
+                        <section class="ordenDatos">
+                        <input class="formatoInput" type="text" name="nombre" placeholder="Nombre*" required>
+                        <input class="formatoInput" type="text" name="Apellido" placeholder="Apellido" >
+                        <input class="formatoInput" type="email" name="email" placeholder="Email">
+                        <input class="formatoInput" type="telefono" name="telefono" placeholder="Telefono*" required></h3>    
+                        </section>
+                    </fieldset>
+                    <fieldset>
+                            <div>
+                            <h3>Horario de Contacto</h3> 
+                            <div class="agrupador">
+                                <label for="horario">Matutino</label>
+                                <input class="formatoInput" type="radio" name="horario" value="matutino">
+                                <label for="horario">Vespertino</label>
+                                <input type="radio" name="horario" value="Vespertino">
+                                <label for="horario">Indistinto</label>
+                                <input type="radio" name="horario" value="Indistinto">    
+                            </div>
+                    </fieldset>
+                    <fieldset>
+                            <div>
+                            <h3>Que productos le interesan?</h3>
+                            <div class="agrupador">
+                            <label for="Producto">Bidones</label>
+                            <input type="checkbox" name="Producto" value="Bidones">
+                            <label for="Producto">Dispenser</label>
+                            <input type="checkbox" name="Producto" value="Dispenser">
+                            <label for="Producto">Combos</label>
+                            <input type="checkbox" name="Producto" value="Combos">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <h3>Dejanos tu comentario</h3>
+                        <textarea name="comentario" id="comentario" cols="50%" rows="10"></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <div class="botonesForm">
+                            <ul>
+                                <li><input type="submit" value="Enviar Formulario"></li>
+                                <li><input type="reset" value="Borrar Formulario"></li>
+                                <!--<li><input type="button" value="Boton que no hace nada"></li>-->
+                            </ul>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+    </section>
+    <footer class="footery border">
+        <div>
+            <a href="#top"><img src="../images/logo2.ico"></a>
+        </div>
+        <!-- Se busa Marca Personal :) -->
+        <div>
+            <img src="../assets/integral.jfif" alt="mg">
+        </div>
+        
+        <!-- Futuros links a Redes Sociales-->
+        <ul class="navRedes">
+            <li><p>Seguinos: </p></li>
+            <li><a href="https://www.facebook.com/aguaestradamasvida/"><img src="../assets/face.svg"></a></li>
+            <li><a href="https://www.instagram.com/aguaestrada/"><img src="../assets/insta.svg"></a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=+5493425289170/"><img src="../assets/ws.svg"></a></li>
+        </ul>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+	font-family: 'Dongle';
+	src: url('../assets/Dongle-Bold.ttf');
+}
+
+
+
+/*Inicio Lote que afecta HTML en GENERAL*/
+.border{
+    border: 1px solid black;
+}
+
+header{
+    grid-area: header;
+}
+
+footer{
+    grid-area: footer;
+}
+
+section#productos{
+    grid-area: productos;
+}
+
+section#servicios{
+    grid-area: servicios;
+}
+
+section#frase{
+    grid-area: frase;
+}
+
+aside{
+    grid-area: publicidad;
+}
+
+.rowFlex {
+	display: flex; 
+	flex-direction: row; 
+	flex-wrap: nowrap; 
+	width: 100%;
+}
+
+.rowFlex img{
+    margin-left: 10px;
+    width: 100px;
+}
+
+.navRedes{
+    display: flex;
+	flex-direction: row;
+	width: 15%;
+    justify-content: space-around;
+}
+
+.navRedes li img{
+    width: 75%;
+	height: 50%;
+    margin-top: 10px;
+}
+
+.navRedes li p{
+    margin-top: 10px;
+}
+
+.navFlex{
+	display: flex;
+	flex-direction: row;
+	width: 90%;
+	justify-content: flex-end;
+}
+
+.navFlex li {list-style-type: none;
+    padding: 15px;
+    font-size: 1rem; 
+}
+
+.navFlex li a {text-decoration: none;}
+
+.body{
+    background-image: url(../images/fondoazul.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.footery{
+    display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+    height: 45px;
+    /*reemplazar height por 100% cuando se aplique Grid a todos los html*/
+    width: 95%;
+    margin-left: 2%;
+    align-self:center;
+}
+
+.footery img{
+    height: 100%;
+}
+
+.footery p{
+    margin-top: 10px;
+}
+
+ul{
+    list-style: none;
+    font-size: 0; 
+}
+
+/* Modificando estilos de lista */
+li{
+    position: relative;
+    font-size: 16px;
+}
+
+li a {
+    text-decoration: none;
+    list-style: none;
+    color: black
+}
+
+/*li:hover {
+    background-color: blue;
+
+}*/
+/*Fin Lote que afecta HTML en GENERAL*/
+
+
+/*Inicio lote que afecta INDEX.html*/
+#grilla{
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "frase frase"
+    "productos publicidad"
+    "servicios publicidad"
+    "footer footer"
+    ;
+    grid-template-rows: 60px 1fr 1fr 1fr 45px;
+    grid-row-gap: 10px;
+    grid-template-columns: auto 15%;
+    grid-column-gap: 10px;
+    height: 100vh;
+    margin: 0;     
+}
+
+.mision{
+    height: 180px;
+    width: 75%;
+    margin-left: 12.5%;
+    margin-top: 70px;
+    border-style: dotted;
+    /*background-color: rgb(255,255,255,0.4);*/
+}
+
+.mision h3 {
+    /* Aplicando Box Modeling */
+	font-size: 20px; 
+	text-align: center; 
+	padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.mision p{
+    /* Aplicando Tipografías y Box Modeling */ 
+
+    font-size: 15px; 
+	text-align: center; 
+	padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.fraseldv{
+    /* Modificando Tipografía */
+    font-size: 40px;
+    font-family: 'Dongle';
+    font-style: oblique;
+    margin-left: 650px;
+    padding: 150px;
+}
+
+.compromiso{
+    width: 70%;
+    height: 150px;
+    margin-left: 15%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(134, 218, 134,0.5);
+}
+
+.compromiso h3{
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.compromiso th{
+    padding-top: 10px;
+}
+
+.publicidad1 img{
+    width: 100%;
+    height: 50%;
+}
+/*Fin lote que afecta INDEX.html*/
+
+
+/*Inicio lote que afecta SOBRENOSOTROS.html*/
+.bodyNosotros{
+    background-image: url(../images/fondoazul.jpg);
+    background-repeat: repeat;
+    position: relative;
+}
+
+.eventos{
+    width: 40%;
+    height: 1650px;
+    margin-left: 55%;
+}
+
+.eventos h3{
+    text-align: center;
+    margin-top: 25px;
+}
+
+.eventos img{
+    height: 500px;
+    width: 300px;
+    margin-left: 25%;
+}
+
+.nuestrosEventos{
+    height: 150px;
+    width: 250px;
+    background-color: rgba(101, 212, 27, 0.3);
+    text-align: center;
+    margin-left: 65%;
+    margin-top: 20px;
+}
+
+.historia{
+    width: 80%;
+    height: 300px;
+    background-color: rgb(0, 139, 139,0.3);
+    margin-left: 10%;
+    margin-top: 30px;
+}
+
+.historia h3{
+    text-align: center;
+    padding: 20px;
+}
+
+.historia p{
+    text-align: center;
+    padding: 10px;
+}
+/*Fin lote que afecta SOBRENOSOTROS.html*/
+
+
+/*Inicio lote que afecta PRODUCTOS.html*/
+.fotoProducto__img{
+    width: 45%;
+    padding: 25px;
+    margin-left: 40%;
+    background-color: black;
+}
+
+.estiloTabla{
+    padding: 15px;
+    margin-left: 40%;
+}
+/*Fin lote que afecta PRODUCTOS.html*/
+
+
+/*Inicio lote que afecta CONTACTO.html*/
+.botonesForm ul li input{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.botonesForm ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.contenedorFoto{
+    width: 420px;
+    height: 390px;
+    background-color: khaki;
+    position: relative;
+    margin-left: 400px;
+}
+
+.containerForm{
+    width: 500px;
+    height: 100%;
+    position: relative;
+    margin-left: 600px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: rgb(23, 124, 190, 0.5);
+}
+
+.containerForm textarea{
+    resize: none;
+    margin-left: 10%;
+}
+
+.agrupador{
+    width: 70%;
+    position: relative;
+    margin-left: 20%;
+}
+/*Fin lote que afecta CONTACTO.html*/
+
+.gradian{
+    background-image: linear-gradient(to left, rgb(66, 206, 53),yellow);
+}
+
