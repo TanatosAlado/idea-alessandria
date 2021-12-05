@@ -182,6 +182,14 @@ footer{
     text-align:center;
 }
 
+.grad{
+    background-image: linear-gradient(to left, grey,rgb(66, 66, 247));
+}
+
+.traslado:hover{
+    transform: rotate(180deg);
+}
+
 ul{
     list-style: none;
    font-size: 0; 
