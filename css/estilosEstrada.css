@@ -4,9 +4,11 @@
 }
 
 @font-face {
-	font-family: 'Dongle';
+	font-family: 'letraBold';
 	src: url('../assets/Dongle-Bold.ttf');
 }
+
+
 
 
 
@@ -44,10 +46,10 @@ aside{
 	flex-direction: row; 
 	flex-wrap: nowrap; 
 	width: 100%;
+    background-color: rgb(0, 139, 139,0.3);
 }
 
 .rowFlex img{
-    margin-left: 10px;
     width: 100px;
 }
 
@@ -59,8 +61,8 @@ aside{
 }
 
 .navRedes li img{
-    width: 75%;
-	height: 50%;
+    width: 100%;
+	height: 75%;
     margin-top: 10px;
 }
 
@@ -94,10 +96,10 @@ aside{
 	flex-direction: row;
 	justify-content: space-between;
     height: 45px;
-    /*reemplazar height por 100% cuando se aplique Grid a todos los html*/
-    width: 95%;
-    margin-left: 2%;
+    width: 100%;
+    margin-top: 10px;
     align-self:center;
+    background-color: rgb(128, 128, 128,0.3);
 }
 
 .footery img{
@@ -107,6 +109,11 @@ aside{
 .footery p{
     margin-top: 10px;
 }
+
+.traslado:hover{
+    transform: rotate(180deg);
+}
+
 
 ul{
     list-style: none;
@@ -124,44 +131,25 @@ li a {
     list-style: none;
     color: black
 }
-
-/*li:hover {
-    background-color: blue;
-
-}*/
 /*Fin Lote que afecta HTML en GENERAL*/
 
 
 /*Inicio lote que afecta INDEX.html*/
-#grilla{
-    display: grid;
-    grid-template-areas:
-    "header header"
-    "frase frase"
-    "productos publicidad"
-    "servicios publicidad"
-    "footer footer"
-    ;
-    grid-template-rows: 60px 1fr 1fr 1fr 45px;
-    grid-row-gap: 10px;
-    grid-template-columns: auto 15%;
-    grid-column-gap: 10px;
-    height: 100vh;
-    margin: 0;     
-}
-
 .mision{
-    height: 180px;
-    width: 75%;
-    margin-left: 12.5%;
-    margin-top: 70px;
+    position: relative;
+    display: inline-block;
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
+    margin-top: 50px;
     border-style: dotted;
-    /*background-color: rgb(255,255,255,0.4);*/
+    background-color: rgb(255,255,255,0.4);
 }
 
 .mision h3 {
     /* Aplicando Box Modeling */
-	font-size: 20px; 
+    font-family: 'letraBold';
+	font-size: 3rem; 
 	text-align: center; 
 	padding-top: 20px;
     padding-bottom: 20px;
@@ -176,26 +164,23 @@ li a {
     padding-bottom: 10px;
 }
 
-.fraseldv{
-    /* Modificando Tipografía */
-    font-size: 40px;
-    font-family: 'Dongle';
-    font-style: oblique;
-    margin-left: 650px;
-    padding: 150px;
-}
-
 .compromiso{
+    position: relative;
+    display: inline-block;
     width: 70%;
-    height: 150px;
+    height: auto;
     margin-left: 15%;
-    margin-top: 20px;
+    margin-top: 100px;
     margin-bottom: 20px;
+    padding-bottom: 20px;
     background-color: rgb(134, 218, 134,0.5);
 }
 
 .compromiso h3{
+    font-family: 'letraBold';
+    font-size: 3rem;
     padding-bottom: 10px;
+    padding-top: 10px;
     text-align: center;
 }
 
@@ -203,7 +188,12 @@ li a {
     padding-top: 10px;
 }
 
+.publicidad1{
+    padding-top: 50px;
+}
+
 .publicidad1 img{
+    margin-top: 30px;
     width: 100%;
     height: 50%;
 }
@@ -212,43 +202,33 @@ li a {
 
 /*Inicio lote que afecta SOBRENOSOTROS.html*/
 .bodyNosotros{
-    background-image: url(../images/fondoazul.jpg);
+    background-color: rgb(0, 139, 139,0.3);
     background-repeat: repeat;
     position: relative;
 }
 
-.eventos{
-    width: 40%;
-    height: 1650px;
-    margin-left: 55%;
-}
-
-.eventos h3{
-    text-align: center;
-    margin-top: 25px;
-}
-
-.eventos img{
-    height: 500px;
-    width: 300px;
-    margin-left: 25%;
-}
-
-.nuestrosEventos{
-    height: 150px;
-    width: 250px;
-    background-color: rgba(101, 212, 27, 0.3);
-    text-align: center;
-    margin-left: 65%;
-    margin-top: 20px;
-}
-
 .historia{
+    position: relative;
+    display: inline-block;
     width: 80%;
-    height: 300px;
+    height: auto;
     background-color: rgb(0, 139, 139,0.3);
+    padding: 35px 0 35px 0;
     margin-left: 10%;
     margin-top: 30px;
+    margin-bottom: 50px;
+    border: 20px solid black;
+}
+
+.historia2{
+    position: relative;
+    display: inline-block;
+    width: 80%;
+    height: auto;
+    background-color: rgb(0, 139, 139,0.3);
+    margin-top: 30px;
+    margin-bottom: 50px;
+    border: 20px solid black;
 }
 
 .historia h3{
@@ -260,6 +240,7 @@ li a {
     text-align: center;
     padding: 10px;
 }
+
 /*Fin lote que afecta SOBRENOSOTROS.html*/
 
 
@@ -325,3 +306,41 @@ li a {
     background-image: linear-gradient(to left, rgb(66, 206, 53),yellow);
 }
 
+.fondogris{
+    background-color: rgba(215,215,215);
+}
+
+.contenedorGaleria{
+    position: relative;
+    width: 80%;
+    margin-left: 10%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.titulos{
+    text-align: center;
+}
+
+.tamano{
+    width: 80%;
+    height: auto;
+}
+
+.margen{
+    margin-top: 25px;
+}
+
+.fonfo img{
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+}
+
+.iconosEco{
+    margin-left: 40px;
+}
+
+.ubicar{
+    padding-top: 100px;
+}
