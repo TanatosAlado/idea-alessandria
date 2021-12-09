@@ -245,12 +245,7 @@ li a {
 
 
 /*Inicio lote que afecta PRODUCTOS.html*/
-.fotoProducto__img{
-    width: 45%;
-    padding: 25px;
-    margin-left: 40%;
-    background-color: black;
-}
+
 
 .estiloTabla{
     padding: 15px;
@@ -343,4 +338,95 @@ li a {
 
 .ubicar{
     padding-top: 100px;
+}
+
+.header {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
+}
+
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+}
+
+.tamanio{
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 50px;
+    height: auto;
+    background-color: rgb(25, 137, 241,0.5);
+}
+
+.tamanio input{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5px;
+}
+
+.tamanio h4{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.tamanio h5{
+    
+    margin-left: 10%;
+}
+
+.tamanio option{
+    margin-top: 10px;
+}
+
+.horaProd{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.comm textarea{
+    position: relative;
+    width: 80%;
+    margin-left: 10%;
+    resize: none;
+}
+
+.datosPrin input{
+    border-radius: 10px
+}
+
+.botonesForm{
+    width: 90%;
+    padding-bottom: 15px;
+}
+
+.calzar img{
+    width: 80%;
+    margin-left: 10%;
+    padding-top: 20px;
+}
+
+.escalar{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: rgb(215,215,215,0.5);
+}
+
+.escalar img{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.escalar iframe{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.titulosTrat h1{
+    font-family: 'letraBold';
+    text-align: center;
 }
