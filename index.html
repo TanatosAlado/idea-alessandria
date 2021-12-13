@@ -12,104 +12,140 @@
         <link rel="icon" type="image/x-icon" href="images/logo2.ico" />
         <!--Link repositorio: https://tanatosalado.github.io/idea-alessandria/   -->
     </head>
+
     <body class="body">
         <header class="rowFlex">
-            <img id="top" src="assets/logo.ico" alt="logo">
-            <ul class="navFlex nav nav-tabs">
-                <li class="navFlex__item1"><a href="index.html"><strong>Inicio</strong></strong></a></li>
-                <li class="navFlex__item2"><a href="pages/productos.html"><strong>Productos</strong></a></li>
-                <li class="navFlex__item3"><a href="pages/sobrenosotros.html"><strong>Nosotros</strong></a></li>
-                <li class="navFlex__item4"><a href="pages/tratamiento.html"><strong>Tratamiento</strong></a></li>
-                <li class="navFlex__item4"><a href="pages/contacto.html"><strong>Contacto</strong></a></li>
-            </ul>
+            <nav class="navbar navbar-expand-sm navbar-light rowFlex">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img id="top" src="assets/logo.png" alt="logo">
+                    </a>
+                    <div class="navFlex collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item navFlex__item1">
+                                <a href="index.html"><strong><span>Inicio</span></strong></a></li> 
+                            <li class="nav-item navFlex__item2">
+                                <a href="pages/productos.html"><strong>Productos</strong></a></li>  
+                            <li class="nav-item navFlex__item3">
+                                <a href="pages/sobrenosotros.html"><strong>Nosotros</strong></a></li>
+                            <li class="nav-item navFlex__item4">
+                                <a href="pages/tratamiento.html"><strong>Tratamiento</strong></a></li>
+                            <li class="nav-item navFlex__item5">
+                                <a href="pages/contacto.html"><strong>Contacto</strong></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </header>
 
-
-    <div class="container"> 
+    <div class="container-fluid">
         <div class="row">
-          <div class="col-11">
-            <div class="container">
-                <section id="productos">
-                    <!-- Nuestra Mision... a ponerle todo! -->
-                    <section class="mision animate__animated animate__backInRight">
-                        <h3>Mision de nuestra empresa</h3>
-                        <p>
-                            <strong>
-                                En Agua Estrada + Vida, perseguimos el ideal de brindar un servicio a la altura de la sociedad, poniendo a disposición un producto fiel y de alta calidad.
-                            </strong>
-                            
-                        </p>                           
-                        <p>
-                            <strong>
-                                Hacemos foco en la importancia de concientizar a la familia sobre lo esencial y sano que resulta el agua como fuente primaria de hidratación.
-                            </strong>
-                        </p>
+            <div class="col-sm-12 col-lg-10">              
+                <div class="container">
+                    <section id="productos">
+                        <section class="mision animate__animated animate__backInRight">
+                            <h3>
+                                <span class="blanco-rojo">
+                                    Mision de nuestra empresa
+                                </span>
+                            </h3>
+                            <p>
+                                <strong>
+                                    En Agua Estrada + Vida, perseguimos el ideal de brindar un servicio a la altura de la sociedad, poniendo a disposición un producto fiel y de alta calidad.
+                                </strong>
+                            </p>                           
+                            <p>
+                                <strong>
+                                    Hacemos foco en la importancia de concientizar a la familia sobre lo esencial y sano que resulta el agua como fuente primaria de hidratación.
+                                </strong>
+                            </p>
+                        </section>
                     </section>
-                </section>
-            </div>
-          </div>
-         <div class="col-1  border border-secondary">
-                <div>
+                </div>
+            </div>            
+                  
+            <div class="col-sm-12 col-lg-2 border">
+                <div class="container">
                     <aside class="publicidad1">
-                        <p>Auspiciante</p>   
-                        <a href="https://www.alicana.com.ar"><img src="assets/alicana.png"></a>
+                        <a href="https://www.alicana.com.ar"><img src="assets/alicana2.png"></a>
                     </aside>
                 </div>
-          </div> 
-        </div>
+            </div>
+        </div>    
         <div class="row">
-            <div class="col-11">
+            <div class="col-sm-12 col-lg-10">
               <div class="container">
                 <section id="servicios">
-                    <!--Reutilizabilidad de materiales + modos ecos-->
                         <section class="compromiso animate__animated animate__backInLeft">
-                            <h3>Compromiso con el medio ambiente</h3>
-                            <table>
-                                <tr>
-                                    <th><img src="assets/reciclable.svg" width="25%" alt="Reciclable"></th>
-                                    <th>Utilizamos bidones compuestos por Polietileno de Alta Densidad. Es un material termoplástico laborado a partir de Etileno, el cual es muy versátil, permitiendo la reutilización o transformación en otro producto.</th>    
-                                </tr>
-                                <tr>                    
-                                    <th><img src="assets/eco.svg" width="25%" alt="ecologico"></th>
-                                    <th>Aportamos nuestro granito de arena para colaborar con la ecología. Utilizamos para lavado de bidones, equipamiento basado en vapores, lo cual reduce en un 70% la utilización de agua.</th>                                                                        
-                                </tr>
-                            </table>
+                            <h3>
+                                <span class="blanco-rojo">
+                                    Compromiso con el medio ambiente
+                                </span>    
+                            </h3>
+                            <div class="row">
+                                <div class="col-sm-12 col-lg-2">
+
+                                    <img src="assets/reciclable.svg" alt="Reciclable">
+
+                                </div>
+                                <div class="col-sm-12 col-lg-10">
+                                    <p>Utilizamos bidones compuestos por Polietileno de Alta Densidad. Es un material termoplástico elaborado a partir de Etileno, el cual es muy versátil, permitiendo la reutilización o transformación en otro producto.</p>
+                                </div>
+                                <div class="col-sm-12 col-lg-2">
+
+                                    <img src="assets/eco.svg" alt="Reciclable">
+
+                                </div>
+                                <div class="col-sm-12 col-lg-10">
+                                    <p>Aportamos nuestro granito de arena para colaborar con la ecología. Utilizamos para lavado de bidones, equipamiento basado en vapores, lo cual reduce en un 70% la utilización de agua.</p>
+                                </div>
+                            </div>
                         </section>
                     </section>
               </div>
             </div>
-            <div class="col-1 ubicar border border-secondary">
-              <p>Espacio disponible para su publicidad. Contactenos..</p> 
+            <div class="col-sm-12 col-lg-2 border">
+                <div class="container">
+                    <aside class="publicidad1">
+                        <a href="https://www.alicana.com.ar"><img src="assets/bella flor.png"></a>
+                    </aside>
+                </div>
             </div>
-          </div> 
-      </div>
+          </div>
+    </div>
 
-
-
-
-
-
-                <!-- Inicio Footer-->
-                <footer class="footery border">
-                    <div>
-                        <a href="#top"><img src="images/logo2.ico"></a>
-                    </div>
-                    
-                    <!-- Se busa Marca Personal :) --> 
+    <!--Nuevo pie de pagina-->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box integral">
+                <figure>
                     <div class="traslado">
-                        <img src="assets/integral.jfif" alt="mg">
+                        <img src="assets/logofooter.png" alt="mg">
                     </div>
-    
-                    <!-- Futuros links a Redes Sociales-->
-                    <ul class="navRedes">
-                        <li><p>Seguinos: </p></li>
-                        <li><a href="https://www.facebook.com/aguaestradamasvida/"><img src="assets/face.svg"></a></li>
-                        <li><a href="https://www.instagram.com/aguaestrada/"><img src="assets/insta.svg"></a></li>
-                        <li><a href="https://api.whatsapp.com/send?phone=+5493425289170/"><img src="assets/ws.svg"></a></li>
-                    </ul>
-                </footer>
-                <!-- Fin Footer -->   
-                <script src="bootstrap/js/bootstrap.min.js"></script>     
-    
+                </figure>
+            </div>
+            <div class="box nosotros">
+             <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3413.256870831791!2d-60.745440211374735!3d-31.185890338345907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b524c149c4532f%3A0x1d373e25d412cf89!2sHosteria%20Estrada!5e0!3m2!1ses!2sar!4v1639369080387!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->   
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Juan de Garay 418, Llambí Campbell, Santa Fe </p>
+                <p>Teléfono Central: 543497420407</p>
+            </div>
+            <div class="box redes">
+                <h2>Siguenos</h2>
+                <div class="red-social">
+                    <a href="https://www.facebook.com/aguaestradamasvida/"><img src="assets/face.svg"></a>
+                    <a href="https://www.instagram.com/aguaestrada/"><img src="assets/insta.svg"></a>
+                    <a href="https://api.whatsapp.com/send?phone=+5493425289170/"><img width="100%" src="assets/ws.svg"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2021 <b>Integral Soluciones informáticas</b> - Todos los derechos reservados</small>
+        </div>
+    </footer>
+    <script src="assets/js/bootstrap.min.js"></script>          
     </body>
 </html>
