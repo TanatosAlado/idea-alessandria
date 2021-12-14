@@ -12,14 +12,30 @@
 <body class="body">
 
     <header class="rowFlex">
-        <img src="../assets/logo.ico" alt="logo">
-		<ul class="navFlex">
-			<li class="navFlex__item1"><a href="../index.html"><strong>Inicio</strong></a></li>
-			<li class="navFlex__item2"><a href="productos.html"><strong>Productos</strong></a></li>
-			<li class="navFlex__item3"><a href="sobrenosotros.html"><strong>Nosotros</strong></a></li>
-			<li class="navFlex__item4"><a href="tratamiento.html"><strong>Tratamiento</strong></a></li>
-			<li class="navFlex__item4"><a href="contacto.html"><strong>Contacto</strong></a></li>
-		</ul>
+        <nav class="navbar navbar-expand-sm navbar-light rowFlex">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img id="top" src="../assets/logo.png" alt="logo">
+                </a>
+                <div class="navFlex collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item navFlex__item1">
+                            <a href="../index.html"><strong><span>Inicio</span></strong></a></li> 
+                        <li class="nav-item navFlex__item2">
+                            <a href="productos.html"><strong>Productos</strong></a></li>  
+                        <li class="nav-item navFlex__item3">
+                            <a href="sobrenosotros.html"><strong>Nosotros</strong></a></li>
+                        <li class="nav-item navFlex__item4">
+                            <a href="tratamiento.html"><strong>Tratamiento</strong></a></li>
+                        <li class="nav-item navFlex__item5">
+                            <a href="contacto.html"><strong>Contacto</strong></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
 
@@ -98,82 +114,33 @@
     </div>
 </div>
 
-
-
-
-
-
-
-<!--  <section class="posicion">
-            <section class="englobador grad">
-                <form action="#">
-                    <fieldset>
-                        <h3><h3>Datos de Contacto</h3>
-                        <section class="ordenDatos">
-                        <input class="formatoInput" type="text" name="nombre" placeholder="Nombre*" required>
-                        <input class="formatoInput" type="text" name="Apellido" placeholder="Apellido" >
-                        <input class="formatoInput" type="email" name="email" placeholder="Email">
-                        <input class="formatoInput" type="telefono" name="telefono" placeholder="Telefono*" required></h3>    
-                        </section>
-                    </fieldset>
-                    <fieldset>
-                            <div>
-                            <h3>Horario de Contacto</h3> 
-                            <div class="agrupador">
-                                <label for="horario">Matutino</label>
-                                <input class="formatoInput" type="radio" name="horario" value="matutino">
-                                <label for="horario">Vespertino</label>
-                                <input type="radio" name="horario" value="Vespertino">
-                                <label for="horario">Indistinto</label>
-                                <input type="radio" name="horario" value="Indistinto">    
-                            </div>
-                    </fieldset>
-                    <fieldset>
-                            <div>
-                            <h3>Que productos le interesan?</h3>
-                            <div class="agrupador">
-                            <label for="Producto">Bidones</label>
-                            <input type="checkbox" name="Producto" value="Bidones">
-                            <label for="Producto">Dispenser</label>
-                            <input type="checkbox" name="Producto" value="Dispenser">
-                            <label for="Producto">Combos</label>
-                            <input type="checkbox" name="Producto" value="Combos">
-                            </div>
-                        </div>
-                    </fieldset>
-                    <fieldset>
-                        <h3>Dejanos tu comentario</h3>
-                        <textarea name="comentario" id="comentario" cols="50%" rows="10"></textarea>
-                    </fieldset>
-                    <fieldset>
-                        <div class="botonesForm animate__animated animate__swing">
-                            <ul>
-                                <li><input type="submit" value="Enviar Formulario"></li>
-                                <li><input type="reset" value="Borrar Formulario"></li>
-                               
-                            </ul>
-                        </div>
-                    </fieldset>
-                </form>
-            </section>  
-
-    </section>--> 
-    <footer class="footery border">
-        <div>
-            <a href="#top"><img src="../images/logo2.ico"></a>
+    </section> 
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box integral">
+                <figure>
+                    <div class="traslado">
+                        <img src="../assets/logofooter.png" alt="mg">
+                    </div>
+                </figure>
+            </div>
+            <div class="box nosotros">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Juan de Garay 418, Llambí Campbell, Santa Fe </p>
+                <p>Teléfono Central: 543497420407</p>
+            </div>
+            <div class="box redes">
+                <h2>Siguenos</h2>
+                <div class="red-social">
+                    <a href="https://www.facebook.com/aguaestradamasvida/"><img src="../assets/face.svg"></a>
+                    <a href="https://www.instagram.com/aguaestrada/"><img src="../assets/insta.svg"></a>
+                    <a href="https://api.whatsapp.com/send?phone=+5493425289170/"><img width="100%" src="../assets/ws.svg"></a>
+                </div>
+            </div>
         </div>
-        <!-- Se busa Marca Personal :) -->
-        <div class="traslado">
-            <img src="../assets/integral.jfif" alt="mg">
+        <div class="grupo-2">
+            <small>&copy; 2021 <b>Integral Soluciones informáticas</b> - Todos los derechos reservados</small>
         </div>
-        
-        <!-- Futuros links a Redes Sociales-->
-        <ul class="navRedes">
-            <li><p>Seguinos: </p></li>
-            <li><a href="https://www.facebook.com/aguaestradamasvida/"><img src="../assets/face.svg"></a></li>
-            <li><a href="https://www.instagram.com/aguaestrada/"><img src="../assets/insta.svg"></a></li>
-            <li><a href="https://api.whatsapp.com/send?phone=+5493425289170/"><img src="../assets/ws.svg"></a></li>
-        </ul>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
 </body>

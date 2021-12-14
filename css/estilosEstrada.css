@@ -9,36 +9,7 @@
 }
 
 
-
 /*Inicio Lote que afecta HTML en GENERAL*/
-.border{
-    border: 1px solid black;
-}
-
-header{
-    grid-area: header;
-}
-
-footer{
-    grid-area: footer;
-}
-
-section#productos{
-    grid-area: productos;
-}
-
-section#servicios{
-    grid-area: servicios;
-}
-
-section#frase{
-    grid-area: frase;
-}
-
-aside{
-    grid-area: publicidad;
-}
-
 .rowFlex {
 	display: flex; 
 	flex-direction: row; 
@@ -48,39 +19,12 @@ aside{
 }
 
 .rowFlex img{
-    width: 100px;s
-}
-
-.navRedes{
-    display: flex;
-	flex-direction: row;
-	width: 15%;
-    justify-content: space-around;
+    width: 100px;
 }
 
 .navItem{
     text-decoration: underline;
     text-decoration-color: red;
-}
-
-.subVerde{
-    text-decoration: underline;
-    text-decoration-color: green;
-}
-
-/*.navFlex span{
-    text-decoration: underline;
-    text-decoration-color: green;
-}*/
-
-.navRedes li img{
-    width: 100%;
-	height: 75%;
-    margin-top: 10px;
-}
-
-.navRedes li p{
-    margin-top: 10px;
 }
 
 .navFlex{
@@ -104,476 +48,8 @@ aside{
     position: relative;
 }
 
-.footery{
-    display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-    height: 45px;
-    width: 100%;
-    margin-top: 10px;
-    align-self:center;
-    background-color: rgb(128, 128, 128,0.3);
-}
-
-.footery img{
-    height: 100%;
-}
-
-.footery p{
-    margin-top: 10px;
-}
-
 .traslado:hover{
     transform: rotate(180deg);
-}
-
-
-ul{
-    list-style: none;
-    font-size: 0; 
-}
-
-/* Modificando estilos de lista */
-li{
-    position: relative;
-    font-size: 16px;
-}
-
-li a {
-    text-decoration: none;
-    list-style: none;
-    color: black
-}
-/*Fin Lote que afecta HTML en GENERAL*/
-
-
-/*Inicio lote que afecta INDEX.html*/
-.mision{
-    position: relative;
-    display: inline-block;
-    width: 70%;
-    height: auto;
-    margin-left: 15%;
-    margin-top: 50px;
-    border-style: dotted;
-/*  background-color: rgb(255,255,255,0.4);*/
-}
-
-.blanco-rojo {
-    color: #FFFFFF;
-    background-color: rgba(168,207,69,0.5);
-    border-radius: 15px;
-}
-
-.mision h3 {
-    /* Aplicando Box Modeling */
-    font-family: 'letraBold';
-	font-size: 3rem; 
-	text-align: center; 
-	padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.mision p{
-    /* Aplicando Tipografías y Box Modeling */ 
-
-    font-size: 15px; 
-	text-align: center; 
-	padding-top: 20px;
-    padding-bottom: 10px;
-}
-
-.compromiso{
-    position: relative;
-    display: inline-block;
-    width: 70%;
-    height: auto;
-    margin-left: 15%;
-    margin-top: 100px;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    border-style: dotted;
-    /*background-color: rgb(134, 218, 134,0.5);*/
-}
-
-.compromiso h3{
-    font-family: 'letraBold';
-    font-size: 3rem;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    text-align: center;
-}
-
-.compromiso th{
-    padding-top: 10px;
-}
-
-.compromiso img{
-    margin-left: 50px;
-}
-
-.publicidad1{
-    padding-top: 50px;
-   
-}
-
-.publicidad1 img{
-    width: 100%;
-    height: 50%;
-}
-/*Fin lote que afecta INDEX.html*/
-
-
-/*Inicio lote que afecta SOBRENOSOTROS.html*/
-.bodyNosotros{
-    background-color: rgb(0, 139, 139,0.3);
-    background-repeat: repeat;
-    position: relative;
-}
-
-.historia{
-    position: relative;
-    display: inline-block;
-    width: 80%;
-    height: auto;
-    background-color: rgb(0, 139, 139,0.3);
-    padding: 35px 0 35px 0;
-    margin-left: 10%;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    border: 20px solid black;
-}
-
-.historia2{
-    position: relative;
-    display: inline-block;
-    width: 80%;
-    height: auto;
-    background-color: rgb(0, 139, 139,0.3);
-    margin-top: 30px;
-    margin-bottom: 50px;
-    border: 20px solid black;
-}
-
-.historia h3{
-    text-align: center;
-    padding: 20px;
-}
-
-.historia p{
-    text-align: center;
-    padding: 10px;
-}
-
-/*Fin lote que afecta SOBRENOSOTROS.html*/
-
-
-/*Inicio lote que afecta PRODUCTOS.html*/
-
-
-.estiloTabla{
-    padding: 15px;
-    margin-left: 40%;
-}
-/*Fin lote que afecta PRODUCTOS.html*/
-
-
-/*Inicio lote que afecta CONTACTO.html*/
-.botonesForm ul li input{
-    width: 100%;
-    border-radius: 5px;
-}
-
-.botonesForm ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 5px;
-}
-
-.contenedorFoto{
-    width: 420px;
-    height: 390px;
-    background-color: khaki;
-    position: relative;
-    margin-left: 400px;
-}
-
-.containerForm{
-    width: 500px;
-    height: 100%;
-    position: relative;
-    margin-left: 600px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    background-color: rgb(23, 124, 190, 0.5);
-}
-
-.containerForm textarea{
-    resize: none;
-    margin-left: 10%;
-}
-
-.distancia{
-margin-top: 50px;
-}
-
-.agrupador{
-    width: 70%;
-    position: relative;
-    margin-left: 20%;
-}
-/*Fin lote que afecta CONTACTO.html*/
-
-.gradian{
-    background-image: linear-gradient(to left, rgb(66, 206, 53),yellow);
-}
-
-.fondogris{
-    background-color: rgba(215,215,215);
-}
-
-.contenedorGaleria{
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-.carrusel{
-    width: 40%;
-    height: auto;
-    margin-left: 30%;
-}
-
-.contenedorGaleria img{
-    width: 100%;
-}
-
-.titulos{
-    text-align: center;
-}
-
-.tamano{
-    width: 80%;
-    height: auto;
-}
-
-.margen{
-    margin-top: 25px;
-}
-
-.fonfo img{
-    margin-top: 30px;
-    width: 100%;
-    height: auto;
-}
-
-.iconosEco{
-    margin-left: 40px;
-}
-
-.ubicar{
-    padding-top: 100px;
-}
-
-.header {
-    color: #36A0FF;
-    font-size: 27px;
-    padding: 10px;
-}
-
-.bigicon {
-    font-size: 35px;
-    color: #36A0FF;
-}
-
-.tamanio{
-    position: relative;
-    display: inline-block;
-    justify-content: center;
-    width: 40%;
-    margin-left: 30%;
-    margin-top: 50px;
-    height: auto;
-    background-color: rgb(25, 137, 241,0.5);
-}
-
-.tamanio input{
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 5px;
-}
-
-.tamanio h4{
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.tamanio h5{
-    
-    margin-left: 10%;
-}
-
-.tamanio option{
-    margin-top: 10px;
-}
-
-.horaProd{
-    margin-top: 10px;
-    margin-left: 10px;
-}
-
-.comm textarea{
-    position: relative;
-    width: 80%;
-    margin-left: 10%;
-    resize: none;
-}
-
-.datosPrin input{
-    border-radius: 10px
-}
-
-.botonesForm{
-    width: 90%;
-    padding-bottom: 15px;
-}
-
-.calzar img{
-    width: 80%;
-    margin-left: 10%;
-    padding-top: 20px;
-}
-
-.escalar{
-    margin-top: 25px;
-    margin-bottom: 25px;
-    background-color: rgb(215,215,215,0.5);
-}
-
-.escalar img{
-    width: 80%;
-    margin-left: 10%;
-}
-
-.escalar iframe{
-    width: 80%;
-    margin-left: 10%;
-}
-
-.titulosTrat h1{
-    font-family: 'letraBold';
-    text-align: center;
-}
-
-@media (max-width:575px) {
-    .navFlex{
-        display: flex;
-        flex-direction: row;
-        width: 90%;
-        justify-content:flex-start;
-     /*   background-color: yellow;*/
-    }
-    .mision h3{
-        font-size:  1rem;
-    }
-
-    .mision p{
-        font-size: 10px;
-    }
-
-    .compromiso h3{
-        font-size:  1rem;
-    }
-
-    .compromiso p{
-        font-size: 10px;
-    }
-
-    .publicidad1 img{
-        width: 50%;
-        height: auto;
-        margin-left: 25%;
-    }
-}
-
-@media (min-width:576px){
-    .navFlex{
-        display: flex;
-        flex-direction: row;
-        width: 90%;
-        justify-content:flex-start;
-    }
-
-    .publicidad1 img{
-        width: 50%;
-        height: auto;
-        margin-left: 25%;
-    }
-}
-
-@media (min-width:768px) {
-    .navFlex{
-        display: flex;
-        flex-direction: row;
-        width: 90%;
-        justify-content:flex-end;
-    }
-
-
-    .publicidad1 p{
-        text-align: center;
-    }
-    
-    .publicidad1 img{
-        width: 50%;
-        height: auto;
-        margin-left: 25%;
-    }
-}
-
-@media (min-width:992px) {
-    .navFlex{
-        display: flex;
-        flex-direction: row;
-        width: 90%;
-        justify-content:flex-end;
-    }
-
-    .mision h3{
-        font-size: 48px;
-
-    }
-    .mision p{
-        font-size: 15px;
-    }
-
-    .publicidad1 img{
-        width: 100%;
-        margin-left: 0%;
-    }
-
-    .compromiso img{
-        width: 40%;
-    }
-}
-
-.integral{
-    position: relative;
-    justify-self: left;
-}
-
-.nosotros iframe{
-    width: 60%;
-    margin-left: 20%;
-    height: auto;
-}
-
-.redes{
-    position: relative;
-    justify-self:right;
 }
 
 .pie-pagina{
@@ -640,6 +116,388 @@ margin-top: 50px;
     font-size: 15px;
 }
 
+.nosotros iframe{
+    width: 60%;
+    margin-left: 20%;
+    height: auto;
+}
+
+.border{
+    border: 1px solid black;
+}
+
+/*Fin Lote que afecta HTML en GENERAL*/
+
+
+/*Inicio lote que afecta INDEX.html*/
+.mision{
+    position: relative;
+    display: inline-block;
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
+    margin-top: 50px;
+    border-style: dotted;
+}
+
+.mision h3 {
+    font-family: 'letraBold';
+	font-size: 3rem; 
+	text-align: center; 
+	padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.mision p{
+    font-size: 15px; 
+	text-align: center; 
+	padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.blanco-rojo {
+    color: #FFFFFF;
+    background-color: rgba(168,207,69,0.5);
+    border-radius: 15px;
+}
+
+.compromiso{
+    position: relative;
+    display: inline-block;
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-style: dotted;
+}
+
+.compromiso h3{
+    font-family: 'letraBold';
+    font-size: 3rem;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.compromiso th{
+    padding-top: 10px;
+}
+
+.compromiso img{
+    margin-left: 50px;
+}
+
+.publicidad1{
+    padding-top: 50px;  
+}
+
+.publicidad1 img{
+    width: 100%;
+    height: 50%;
+}
+
+.integral{
+    position: relative;
+    justify-self: left;
+}
+
+.zoom:hover{
+    transform: scale(1.3);
+}
+
+.redes{
+    position: relative;
+    justify-self:right;
+}
+
+.carrusel{
+    width: 40%;
+    height: auto;
+    margin-left: 30%;
+}
+/*Fin lote que afecta INDEX.html*/
+
+
+/*Inicio lote que afecta NOSOTROS.html*/
+.historia{
+    position: relative;
+    display: inline-block;
+    width: 80%;
+    height: auto;
+    background-color: rgb(0, 139, 139,0.3);
+    padding: 35px 0 35px 0;
+    margin-left: 10%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    border: 20px solid black;
+}
+
+.historia h3{
+    text-align: center;
+    padding: 20px;
+}
+
+.historia p{
+    text-align: center;
+    padding: 10px;
+}
+
+.distancia{
+    margin-top: 50px;
+    }
+    
+.contenedorGaleria{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.contenedorGaleria img{
+    width: 100%;
+}
+
+.titulos{
+    text-align: center;
+}
+
+.duracion{
+    animation-duration: 3s;
+    animation-delay: 5s;
+}
+/*Fin lote que afecta NOSOTROS.html*/
+
+
+/*Inicio lote que afecta PRODUCTOS.html*/
+.calzar img{
+    width: 80%;
+    margin-left: 10%;
+    padding-top: 20px;
+}
+/*Fin lote que afecta PRODUCTOS.html*/
+
+
+/*Inicio lote que afecta TRATAMIENTO.html*/
+.escalar{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: rgb(215,215,215,0.5);
+}
+
+.escalar img{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.escalar iframe{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.titulosTrat h1{
+    font-family: 'letraBold';
+    text-align: center;
+}
+/*Fin lote que afecta TRATAMIENTO.html*/
+
+
+/*Inicio lote que afecta CONTACTO.html*/
+.botonesForm ul li input{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.botonesForm ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.tamano{
+    width: 80%;
+    height: auto;
+}
+
+.tamanio{
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 50px;
+    height: auto;
+    background-color: rgb(25, 137, 241,0.5);
+}
+
+.tamanio input{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5px;
+}
+
+.tamanio h4{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.tamanio h5{
+    
+    margin-left: 10%;
+}
+
+.tamanio option{
+    margin-top: 10px;
+}
+
+.comm textarea{
+    position: relative;
+    width: 80%;
+    margin-left: 10%;
+    resize: none;
+}
+
+.horaProd{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.datosPrin input{
+    border-radius: 10px
+}
+
+.botonesForm{
+    width: 90%;
+    padding-bottom: 15px;
+}
+/*Fin lote que afecta CONTACTO.html*/
+
+
+/*Comienzo Responsive*/
+
+@media (max-width:575px) {
+    .navFlex{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content:flex-start;
+    }
+
+    .mision h3{
+        font-size:  1rem;
+    }
+
+    .mision p{
+        font-size: 10px;
+    }
+
+    .compromiso h3{
+        font-size:  1rem;
+    }
+
+    .compromiso p{
+        font-size: 10px;
+    }
+
+    .publicidad1 img{
+        width: 50%;
+        height: auto;
+        margin-left: 25%;
+    }
+
+    .resize img{
+        display: flex;
+        width: 150%;
+    }
+
+    .carrusel{
+        width: 80%;
+        height: auto;
+        margin-left: 10%;
+    }
+}
+
+@media (min-width:576px){
+    .navFlex{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content:flex-start;
+    }
+
+    .publicidad1 img{
+        width: 50%;
+        height: auto;
+        margin-left: 25%;
+    }
+
+    .carrusel{
+        width: 60%;
+        height: auto;
+        margin-left: 20%;
+    }
+}
+
+@media (min-width:768px) {
+    .navFlex{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content:flex-end;
+    }
+
+    .publicidad1 p{
+        text-align: center;
+    }
+    
+    .publicidad1 img{
+        width: 50%;
+        height: auto;
+        margin-left: 25%;
+    }
+
+    .carrusel{
+        width: 50%;
+        height: auto;
+        margin-left: 25%;
+    }
+}
+
+@media (min-width:992px) {
+    .navFlex{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content:flex-end;
+    }
+
+    .mision h3{
+        font-size: 48px;
+
+    }
+    .mision p{
+        font-size: 15px;
+    }
+
+    .publicidad1 img{
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .compromiso img{
+        width: 40%;
+    }
+
+    .carrusel{
+        width: 40%;
+        height: auto;
+        margin-left: 30%;
+    }
+}
+
 @media screen and (max-width:768px) {
     .pie-pagina .grupo-1{
         width: 90%;
@@ -661,7 +519,56 @@ margin-top: 50px;
         width: 10%;
     }
 }
+/*Fin Responsive*/
 
-/*.fondoNosotros{
-    background-image: url(../images/nosotros2.jpg);
+
+
+/*Clases deshabilitadas, que pueden volver*/
+
+/*.navRedes{
+    display: flex;
+	flex-direction: row;
+	width: 15%;
+    justify-content: space-around;
+}
+
+.navRedes li img{
+    width: 100%;
+	height: 75%;
+    margin-top: 10px;
+}
+
+.navRedes li p{
+    margin-top: 10px;
+}  
+
+ul{
+    list-style: none;
+    font-size: 0; 
+}
+
+
+li{
+    position: relative;
+    font-size: 16px;
+}
+
+li a {
+    text-decoration: none;
+    list-style: none;
+    color: black
+}   */
+
+/*
+.margen{
+    margin-top: 25px;
+}
+
+.iconosEco{
+    margin-left: 40px;
+}
+
+.ubicar{
+    padding-top: 100px;
 }*/
+
