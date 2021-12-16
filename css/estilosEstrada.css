@@ -34,7 +34,8 @@
 	justify-content: flex-start;
 }
 
-.navFlex li {list-style-type: none;
+.navFlex li {
+    list-style-type: none;
     padding: 15px;
     font-size: 1rem; 
 }

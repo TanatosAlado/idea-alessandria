@@ -1,0 +1,384 @@
+@import "tipografia";
+@import "assetsIcon";
+
+
+.mision{
+    position: relative;
+    display: inline-block;
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
+    margin-top: 50px;
+    border-style: dotted;
+    h3{
+        font-family: '$tipografia';
+        font-size: $tamanioTitulo; 
+        text-align: center; 
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    p{
+        font-size: $tamanioParrafo; 
+        text-align: center; 
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+}
+
+.compromiso{
+    position: relative;
+    display: inline-block;
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-style: dotted;
+    h3{
+        font-family: 'letraBold';
+        font-size: $tamanioTitulo;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        text-align: center;
+    }
+    th{
+        padding-top: 10px;
+    }
+    img{
+        margin-left: 50px;
+    }
+}
+
+.navFlex{
+	display: flex;
+	flex-direction: row;
+	width: 90%;
+	justify-content: flex-start;
+    li{
+        list-style-type: none;
+        padding: 15px;
+        font-size: 1rem; 
+        a{
+            text-decoration: none;
+        }
+    }
+}
+
+.navItem{
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+
+.rowFlex {
+	display: flex; 
+	flex-direction: row; 
+	flex-wrap: nowrap; 
+	width: 100%;
+    background-color: rgba(242, 250, 250, 0.3);
+    img{
+        width: 100px;
+    }
+}
+
+.body{
+    background-image: url(../images/pantallalimpia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.border{
+    border: 1px solid black;
+}
+  
+
+.whatsapp {
+    width: 45px;
+    height: 45px;
+    background-image: $wsicon;
+}
+  
+.instagram {
+    width: 45px;
+    height: 45px;
+    background-image: $instagramicon;
+}
+  
+.facebook {
+    width: 45px;
+    height: 45px;
+    background-image: $facebookicon;
+}
+
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+    small{
+        font-size: 15px;
+    }
+} 
+
+.nosotros{
+    iframe{
+        width: 60%;
+        margin-left: 20%;
+        height: auto;
+    }
+} 
+
+.blanco-rojo {
+    color: #FFFFFF;
+    background-color: rgba(168,207,69,0.5);
+    border-radius: 15px;
+}
+
+.redes{
+    position: relative;
+    justify-self:right;
+}
+
+.integral{
+    position: relative;
+    justify-self: left;
+}
+
+
+.publicidad1{
+    padding-top: 50px;  
+    img{
+        width: 100%;
+        height: 50%;
+    }
+}
+
+.zoom{
+    &:hover{
+        transform: scale(1.3);
+    } 
+}
+
+.traslado{
+     &:hover{
+        transform: rotate(180deg);
+    }
+}
+
+
+@media (max-width:575px) {
+    .navFlex{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content:flex-start;
+    }
+
+    .mision{
+        h3{
+            font-size:  1rem;
+        }
+        p{
+            font-size: 10px;
+        }
+    }
+
+    .compromiso{
+        h3{
+            font-size:  1rem;
+        }
+        p{
+            font-size: 10px;
+        }
+    }
+
+    .publicidad1{
+        img{
+            width: 50%;
+            height: auto;
+            margin-left: 25%;
+        }
+    }
+
+    .resize img{
+        display: flex;
+        width: 150%;
+    }
+
+    .carrusel{
+        width: 80%;
+        height: auto;
+        margin-left: 10%;
+    }
+}
+
+@media (min-width:576px){
+    .navFlex{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content:flex-start;
+    }
+
+    .publicidad1{
+        img{
+            width: 50%;
+            height: auto;
+            margin-left: 25%;
+        }
+    }
+
+    .carrusel{
+        width: 60%;
+        height: auto;
+        margin-left: 20%;
+    }
+}
+
+.pie-pagina{
+    width: 100%;
+    background-color: rgba(168,207,69,0.5);
+    .grupo-1{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 50px;
+        padding: 45px 0px;
+        .box{
+            figure{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content:center;
+                align-items: center;
+                img{
+                    width: 250px;
+                }    
+            }
+            h2{
+                color: black;
+                margin-bottom: 25px;
+                font-size: 20px;
+            }
+            p{
+                color: black;
+                margin-bottom: 10px;
+            }
+        } 
+        .red-social a{
+            display: inline-block;
+            text-decoration: none;
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            color: #fff;
+            margin-right: 10px;
+            transition: all 300ms ease;
+        }
+    }
+}
+
+
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+    small{
+        font-size: 15px;
+    }
+} 
+
+
+@media (min-width:768px) {
+    .navFlex{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content:flex-end;
+    }
+
+    .publicidad1{
+        p{
+            text-align: center;
+        }
+        img{
+            width: 50%;
+            height: auto;
+            margin-left: 25%;
+        }
+    }
+
+    .carrusel{
+        width: 50%;
+        height: auto;
+        margin-left: 25%;
+    }
+}
+
+@media (min-width:992px) {
+    .navFlex{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content:flex-end;
+    }
+
+    .mision{
+        h3{
+            font-size: 48px;
+        }
+        p{
+            font-size: 15px;
+        }
+    }
+
+    .publicidad1{
+        img{
+            width: 100%;
+            margin-left: 0%;
+        }
+    }
+
+    .compromiso{
+        img{
+            width: 40%;
+        }
+    }
+   
+    .carrusel{
+        width: 40%;
+        height: auto;
+        margin-left: 30%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .pie-pagina{
+        .grupo-1{
+            width: 90%;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 30px;
+            padding: 35px 0px;
+        } 
+    }    
+
+    .integral{
+        position: relative;
+        justify-self:center;
+    }
+    
+    .redes{
+        position: relative;
+        justify-self:center;
+    }
+    .compromiso{
+        img{
+            width: 10%;
+        }
+    }
+}
