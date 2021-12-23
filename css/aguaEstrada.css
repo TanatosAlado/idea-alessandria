@@ -75,14 +75,14 @@
   flex-direction: row;
   flex-wrap: nowrap;
   width: 100%;
-  background-color: rgba(242, 250, 250, 0.3);
+  background-color: rgba(242, 250, 250, 0.5);
 }
 .rowFlex img {
   width: 100px;
 }
 
 .body {
-  background-image: url(../images/pantallalimpia.jpg);
+  background-image: url(../assets/fondopuente.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -120,6 +120,9 @@
   font-size: 15px;
 }
 
+.nosotros {
+  text-align: center;
+}
 .nosotros iframe {
   width: 60%;
   margin-left: 20%;
@@ -292,6 +295,11 @@
     height: auto;
     margin-left: 25%;
   }
+
+  .tamanio {
+    width: 40%;
+    margin-left: 30%;
+  }
 }
 @media (min-width: 992px) {
   .navFlex {
@@ -322,6 +330,11 @@
     height: auto;
     margin-left: 30%;
   }
+
+  .tamanio {
+    width: 30%;
+    margin-left: 35%;
+  }
 }
 @media screen and (max-width: 768px) {
   .pie-pagina .grupo-1 {
@@ -344,6 +357,162 @@
   .compromiso img {
     width: 10%;
   }
+}
+.tamanio {
+  position: relative;
+  display: inline-block;
+  justify-content: center;
+  width: 30%;
+  margin-left: 35%;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  height: auto;
+  background-color: rgba(25, 137, 241, 0.5);
+}
+.tamanio input {
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 5px;
+}
+.tamanio h4 {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.tamanio h5 {
+  text-align: center;
+}
+.tamanio option {
+  margin-top: 10px;
+}
+
+.datosPrin input {
+  border-radius: 10px;
+  text-align: center;
+}
+
+.horaProd {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.comm {
+  margin-top: 20px;
+}
+.comm textarea {
+  position: relative;
+  width: 60%;
+  margin-left: 20%;
+  resize: none;
+}
+
+.botonesForm {
+  width: 100%;
+  padding-bottom: 15px;
+}
+.botonesForm ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px;
+}
+.botonesForm ul li input {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.velocidad {
+  animation-duration: 1s;
+  animation-delay: 1s;
+}
+
+.card-body {
+  justify-content: center;
+  align-content: center;
+  justify-self: center;
+  justify-items: center;
+}
+.card-body .card-title {
+  font-size: 1rem;
+  text-align: center;
+}
+.card-body .card-text {
+  text-align: center;
+}
+
+.espacio {
+  text-align: center;
+}
+
+.ubicacion {
+  margin-top: 70px;
+  margin-bottom: 35px;
+}
+
+.historia {
+  position: relative;
+  display: inline-block;
+  width: 80%;
+  height: auto;
+  padding: 35px 0 35px 0;
+  margin-left: 10%;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  /*background-color: rgb(0, 139, 139,0.3);*/
+  /*border: 20px solid black;*/
+  /*  h3{
+        text-align: center;
+        padding: 20px;
+    }
+    p{
+        text-align: center;
+        padding: 10px;
+    }*/
+}
+
+.distancia {
+  margin-top: 50px;
+}
+
+.contenedorGaleria {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.contenedorGaleria img {
+  width: 100%;
+}
+
+.titulos {
+  text-align: center;
+}
+
+.duracion {
+  animation-duration: 3s;
+  animation-delay: 5s;
+}
+
+/*mixin sin parametros*/
+.reborde, .reborde2 {
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px black;
+}
+
+/*@extend   */
+.reborde2 {
+  background-color: rgba(0, 139, 139, 0.3);
+  color: white;
+}
+
+.estiloMapa h3 {
+  padding: 20px;
+  text-align: center;
+}
+.estiloMapa p {
+  padding: 10px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=aguaEstrada.css.map */
