@@ -572,3 +572,28 @@ $estilos: (
         text-align: map-get($map: $estilos, $key: centro);    
     }
 }
+
+.calzar img{
+    width: 80%;
+    margin-left: 10%;
+    padding-top: 20px;
+}
+
+.titulosTrat h1{
+    font-family: 'letraBold';
+    text-align: center;
+}
+
+.escalar{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: rgb(215,215,215,0.5);
+    img{
+        width: 80%;
+        margin-left: 10%;
+    }
+    iframe{
+        width: 80%;
+        margin-left: 10%;
+    }
+}

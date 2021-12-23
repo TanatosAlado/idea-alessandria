@@ -515,4 +515,29 @@
   text-align: center;
 }
 
+.calzar img {
+  width: 80%;
+  margin-left: 10%;
+  padding-top: 20px;
+}
+
+.titulosTrat h1 {
+  font-family: "letraBold";
+  text-align: center;
+}
+
+.escalar {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  background-color: rgba(215, 215, 215, 0.5);
+}
+.escalar img {
+  width: 80%;
+  margin-left: 10%;
+}
+.escalar iframe {
+  width: 80%;
+  margin-left: 10%;
+}
+
 /*# sourceMappingURL=aguaEstrada.css.map */
