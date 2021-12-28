@@ -89,6 +89,21 @@
     position: relative;
 }
 
+.bodyContacto{
+    background-image: url(../images/fondoplaya.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+}
+
+.inspiracion{
+    margin-top: 10px;
+    text-align: center;
+    p{
+        font-size: 1.3rem;
+    }
+}
+
 .border{
     border: 1px solid black;
 }
@@ -410,7 +425,7 @@
     display: inline-block;
     justify-content: center;
     width: 30%;
-    margin-left: 35%;
+    margin-left: 5%;
     margin-top: 50px;
     margin-bottom: 40px;
     height: auto;
@@ -432,6 +447,8 @@
         margin-top: 10px;
     }
 }
+
+
 
 .datosPrin{
     input{
