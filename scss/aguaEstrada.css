@@ -19,7 +19,8 @@
 
 .navItem {
   text-decoration: underline;
-  text-decoration-color: red;
+  -webkit-text-decoration-color: red;
+          text-decoration-color: red;
 }
 
 .rowFlex {
@@ -185,8 +186,10 @@
 }
 
 .duracion {
-  animation-duration: 3s;
-  animation-delay: 5s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
 }
 
 .promos {
@@ -223,15 +226,9 @@
 
 .promo__productos {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
   justify-content: space-around;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -246,13 +243,10 @@
   height: 250px;
   width: 250px;
   position: relative;
-  -webkit-transition: all 0.5s linear;
   transition: all 0.5s linear;
-  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
 .promo__producto__card:hover {
-  -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 .promo__producto__card:hover .promo__producto__card__front img {
@@ -260,19 +254,12 @@
 }
 
 .promo__producto__card__front {
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#dcecb5), to(#a8cf45));
   background: linear-gradient(#dcecb5, #a8cf45);
   z-index: 2;
   -webkit-backface-visibility: hidden;
@@ -285,18 +272,9 @@
 }
 
 .promo__producto__card__back {
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: column;
   flex-flow: column;
   vertical-align: middle;
   position: absolute;
@@ -304,10 +282,8 @@
   width: 100%;
   height: 90%;
   border-radius: 10px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#dcecb5), to(#a8cf45));
   background: linear-gradient(#dcecb5, #a8cf45);
   z-index: 1;
-  -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 
@@ -319,11 +295,7 @@
 }
 
 .promo__contactanos {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   margin-top: 10px;
   padding-bottom: 10px;
@@ -634,8 +606,10 @@
 }
 
 .velocidad {
-  animation-duration: 1s;
-  animation-delay: 1s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 /*mixin sin parametros*/
@@ -755,9 +729,6 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 16 px;
-}
-
-/*# sourceMappingURL=aguaEstrada.css.map */
+}/*# sourceMappingURL=aguaEstrada.css.map */
