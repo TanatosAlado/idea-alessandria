@@ -1,5 +1,13 @@
 @import "tipografia";
 
+* {
+    margin :  0 ;
+    padding :  0 ;
+    -webkit-box-sizing : border-box;
+            box-sizing : border-box;
+    font-size :  16 px ;
+  }
+
 //Inicio General
 
 .navFlex{
@@ -275,7 +283,6 @@
     }
 }
 
- 
 .promo__producto__card__front {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -568,7 +575,46 @@ height: 250px;
         height: auto;
         margin-left: 10%;
     }
+    
+    .tamanio{
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .simbolomas{
+        width: 20%;
+    }
+
+    .carousel-control-next-icon:after
+    {
+        content: '>';
+        font-size: 25px;
+        color: green;
+    }
+
+    .carousel-control-prev-icon:after {
+        content: '<';
+        font-size: 25px;
+        color: green;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        height: 50px;
+        width: 50px;
+        outline: black;
+    }
+    .espacio{
+        img{
+            width: 50%;
+        }
+    }
+    .promos{
+        font-size: 1rem;
+    }
 }
+
+
 
 @media (min-width:576px){
     .navFlex{
@@ -591,79 +637,35 @@ height: 250px;
         height: auto;
         margin-left: 20%;
     }
-}
 
-@media (min-width:768px) {
-    .navFlex{
-        display: flex;
-        flex-direction: row;
-        width: 90%;
-        justify-content:flex-end;
+    .carousel-control-next-icon:after
+    {
+        content: '>';
+        font-size: 35px;
+        color: green;
     }
 
-    .publicidad1{
-        p{
-            text-align: center;
-        }
-        img{
-            width: 100%;
-            height: auto;
-            margin-left: 0%;
-        }
+    .carousel-control-prev-icon:after {
+        content: '<';
+        font-size: 35px;
+        color: green;
     }
 
-    .carrusel{
-        width: 70%;
-        height: auto;
-        margin-left: 15%;
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        height: 75px;
+        width: 75px;
+        outline: black;
+    }
+    .promos{
+        font-size: 1rem;
     }
 
     .tamanio{
-        width: 40%;
-        margin-left: 30%;
-
-    }
-}
-
-@media (min-width:992px) {
-    .navFlex{
-        display: flex;
-        flex-direction: row;
-        width: 90%;
-        justify-content:flex-end;
-    }
-
-    .mision{
-        h3{
-            font-size: 48px;
-        }
-        p{
-            font-size: 15px;
-        }
-    }
-
-    .publicidad1{
-        img{
-            width: 100%;
-            margin-left: 0%;
-        }
-    }
-
-    .compromiso{
-        img{
-            width: 40%;
-        }
-    }
-
-    .carrusel{
         width: 80%;
-        height: auto;
         margin-left: 10%;
     }
-    .tamanio{
-        width: 30%;
-        margin-left: 5%;
-    }
+    
 }
 
 @media screen and (max-width:768px) {
@@ -691,6 +693,111 @@ height: 250px;
         }
     }
 }
+
+
+@media (min-width:768px) {
+    .navFlex{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content:flex-end;
+    }
+
+    .publicidad1{
+        p{
+            text-align: center;
+            font-size: 0.8rem;
+        }
+        img{
+            width: 100%;
+            height: auto;
+            margin-left: 0%;
+        }
+    }
+
+    .carrusel{
+        width: 70%;
+        height: auto;
+        margin-left: 15%;
+    }
+
+    .tamanio{
+        width: 40%;
+        margin-left: 30%;
+    }
+
+    .carousel-control-next-icon:after
+    {
+        content: '>';
+        font-size: 45px;
+        color: green;
+    }
+
+    .carousel-control-prev-icon:after {
+        content: '<';
+        font-size: 45px;
+        color: green;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        height: 100px;
+        width: 100px;
+        outline: black;
+    }
+    .promos{
+        font-size: 1.5rem;
+    }
+}
+
+
+@media (min-width:992px) {
+    .navFlex{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content:flex-end;
+    }
+
+    .mision{
+        h3{
+            font-size: 48px;
+        }
+        p{
+            font-size: 15px;
+        }
+    }
+
+    .publicidad1{
+        img{
+            width: 100%;
+            margin-left: 0%;
+        }
+        p{
+            font-size: 1.3rem;
+        }
+    }
+
+    .compromiso{
+        img{
+            width: 40%;
+        }
+    }
+
+    .carrusel{
+        width: 80%;
+        height: auto;
+        margin-left: 10%;
+    }
+    .tamanio{
+        width: 30%;
+        margin-left: 5%;
+    }
+    .promos{
+        font-size: 2rem;
+    }
+}
+
 //Fin Responsive
 
 
@@ -710,14 +817,6 @@ height: 250px;
 }
 
 
-
-
-//Seccion Contacto
-
-.velocidad{
-    animation-duration: 1s;
-    animation-delay: 1s;
-}
 
 
 
@@ -854,11 +953,3 @@ $estilos: (
 }
 
 
-
-  * {
-    margin :  0 ;
-    padding :  0 ;
-    -webkit-box-sizing : border-box;
-            box-sizing : border-box;
-    font-size :  16 px ;
-  }
