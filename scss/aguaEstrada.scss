@@ -407,8 +407,6 @@ height: 250px;
     }
 }
 
-
-
 .datosPrin{
     input{
         border-radius: 10px;
@@ -550,6 +548,11 @@ height: 250px;
 //Inicio Responsive
 
 @media (max-width:575px) {
+.promo__productos{
+    .promo__producto{
+        margin-bottom: 25px;
+    }
+}
 
     .navFlex{
         display: flex;
@@ -629,9 +632,13 @@ height: 250px;
         img{
             width: 50%;
         }
+        h3{
+            margin-top: 20px;
+        }
     }
     .promos{
-        font-size: 1rem;
+            font-size: 1.5rem;
+            margin-top: 50px;
     }
     
     .pie-pagina{
@@ -655,11 +662,21 @@ height: 250px;
             text-align: center;
         }
     }
+    .nosotros{
+        text-align: center;
+    }
+
 }
 
 
 
 @media (min-width:576px) and (max-width:767px) {
+
+    .promo__productos{
+        .promo__producto{
+            margin-bottom: 25px;
+        }
+    }
 
     .navFlex{
         display: flex;
@@ -730,6 +747,10 @@ height: 250px;
         h2{
             text-align: center;
         }
+    }
+
+    .nosotros{
+        text-align: center;
     }
 
     .red-social{

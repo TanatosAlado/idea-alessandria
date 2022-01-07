@@ -496,6 +496,10 @@
 }
 
 @media (max-width: 575px) {
+  .promo__productos .promo__producto {
+    margin-bottom: 25px;
+  }
+
   .navFlex {
     display: flex;
     flex-direction: row;
@@ -567,9 +571,13 @@
   .espacio img {
     width: 50%;
   }
+  .espacio h3 {
+    margin-top: 20px;
+  }
 
   .promos {
-    font-size: 1rem;
+    font-size: 1.5rem;
+    margin-top: 50px;
   }
 
   .pie-pagina .grupo-1 {
@@ -591,8 +599,16 @@
   .redes h2 {
     text-align: center;
   }
+
+  .nosotros {
+    text-align: center;
+  }
 }
 @media (min-width: 576px) and (max-width: 767px) {
+  .promo__productos .promo__producto {
+    margin-bottom: 25px;
+  }
+
   .navFlex {
     display: flex;
     flex-direction: row;
@@ -658,6 +674,10 @@
     justify-self: center;
   }
   .redes h2 {
+    text-align: center;
+  }
+
+  .nosotros {
     text-align: center;
   }
 
