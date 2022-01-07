@@ -134,6 +134,12 @@
     small{
         font-size: 15px;
     }
+   
+.margenInferior{
+    img{
+        margin-bottom: 30px;
+    }
+}    
 } 
 //Fin General
 
@@ -465,9 +471,9 @@ height: 250px;
 .mision{
     position: relative;
     display: inline-block;
-    width: 70%;
+    width: 80%;
     height: auto;
-    margin-left: 15%;
+    margin-left: 10%;
     margin-top: 50px;
     h3{
         font-family: 'letraBold';
@@ -487,24 +493,34 @@ height: 250px;
 .compromiso{
     position: relative;
     display: inline-block;
-    width: 70%;
+    width: 80%;
     height: auto;
-    margin-left: 15%;
+    margin-left: 10%;
     margin-top: 50px;
     margin-bottom: 20px;
     padding-bottom: 20px;
     h3{
         font-family: 'letraBold';
         font-size: $tamanioTitulo;
+        text-align: center;
         padding-bottom: 10px;
         padding-top: 10px;
-        text-align: center;
+        
     }
     th{
         padding-top: 10px;
     }
     img{
-        margin-left: 50px;
+        align-items: center;
+        //margin-left: 50px;
+        width: 20%;
+        margin-left: 40%;
+    }
+    p{
+        font-size: $tamanioParrafo; 
+        text-align: center; 
+        padding-top: 20px;
+        padding-bottom: 10px;
     }
 }
 
@@ -534,28 +550,32 @@ height: 250px;
 //Inicio Responsive
 
 @media (max-width:575px) {
+
     .navFlex{
         display: flex;
         flex-direction: row;
-        width: 90%;
+        width: 95%;
         justify-content:flex-start;
     }
 
     .mision{
+        width: 90%;
+        height: auto;
+        margin-left: 5%;
         h3{
-            font-size:  1rem;
+            font-size:  1.6rem;
         }
         p{
-            font-size: 10px;
+            font-size: 13px;
         }
     }
 
     .compromiso{
         h3{
-            font-size:  1rem;
+            font-size:  1.6rem;
         }
         p{
-            font-size: 10px;
+            font-size: 13px;
         }
     }
 
@@ -564,6 +584,7 @@ height: 250px;
             width: 50%;
             height: auto;
             margin-left: 25%;
+            margin-bottom: 25px;
         }
     }
 
@@ -622,26 +643,45 @@ height: 250px;
         } 
     }    
 
+    .integral{
+        position: relative;
+        justify-self:center;
+    }
+
+    .redes{
+        position: relative;
+        justify-self:center;
+        h2{
+            text-align: center;
+        }
+    }
 }
 
 
 
 @media (min-width:576px) and (max-width:767px) {
 
+    .navFlex{
+        display: flex;
+        flex-direction: row;
+        width: 95%;
+        justify-content: flex-start;
+    }
+
     .publicidad1{
         img{
             width: 50%;
             height: auto;
             margin-left: 25%;
+            margin-bottom: 25px;
         }
     }
 
     .carrusel{
-        width: 60%;
+        width: 80%;
         height: auto;
-        margin-left: 20%;
+        margin-left: 10%;
     }
-
     .carousel-control-next-icon:after
     {
         content: '>';
@@ -687,17 +727,36 @@ height: 250px;
     .redes{
         position: relative;
         justify-self:center;
-        background-color: greenyellow;
+        h2{
+            text-align: center;
+        }
     }
 
     .red-social{
         position: relative;
         justify-content: center;
+    }    .mision{
+        width: 90%;
+        height: auto;
+        margin-left: 5%;
+        h3{
+            font-size:  1.6rem;
+        }
+        p{
+            font-size: 13px;
+        }
     }
 
     .compromiso{
+        h3{
+            font-size:  1.6rem;
+        }
+        p{
+            font-size: 13px;
+        }
         img{
-            width: 10%;
+            width: 20%;
+            margin-left: 40%;
         }
     }
     
@@ -715,6 +774,7 @@ height: 250px;
         p{
             text-align: center;
             font-size: 0.8rem;
+            background-color: black;
         }
         img{
             width: 100%;
@@ -724,9 +784,9 @@ height: 250px;
     }
 
     .carrusel{
-        width: 70%;
+        width: 80%;
         height: auto;
-        margin-left: 15%;
+        margin-left: 10%;
     }
 
     .tamanio{
@@ -755,6 +815,18 @@ height: 250px;
     }
     .promos{
         font-size: 1.5rem;
+    }
+    .compromiso{
+        h3{
+            font-size:  1.6rem;
+        }
+        p{
+            font-size: 13px;
+        }
+        img{
+            width: 20%;
+            margin-left: 40%;
+        }
     }
 }
 
@@ -834,20 +906,6 @@ height: 250px;
 }
 
 //Fin Responsive
-
-
-
-.nosotros{
-    text-align: center;
-    iframe{
-        width: 60%;
-        margin-left: 20%;
-        height: auto;
-    }
-} 
-
-
-
 
 
 /*mixin sin parametros*/

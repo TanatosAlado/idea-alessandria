@@ -129,6 +129,9 @@
 .pie-pagina .grupo-2 small {
   font-size: 15px;
 }
+.pie-pagina .grupo-2 .margenInferior img {
+  margin-bottom: 30px;
+}
 
 .fondopubli {
   background-color: rgba(144, 238, 144, 0.3);
@@ -425,9 +428,9 @@
 .mision {
   position: relative;
   display: inline-block;
-  width: 70%;
+  width: 80%;
   height: auto;
-  margin-left: 15%;
+  margin-left: 10%;
   margin-top: 50px;
 }
 .mision h3 {
@@ -447,9 +450,9 @@
 .compromiso {
   position: relative;
   display: inline-block;
-  width: 70%;
+  width: 80%;
   height: auto;
-  margin-left: 15%;
+  margin-left: 10%;
   margin-top: 50px;
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -457,15 +460,23 @@
 .compromiso h3 {
   font-family: "letraBold";
   font-size: 3rem;
+  text-align: center;
   padding-bottom: 10px;
   padding-top: 10px;
-  text-align: center;
 }
 .compromiso th {
   padding-top: 10px;
 }
 .compromiso img {
-  margin-left: 50px;
+  align-items: center;
+  width: 20%;
+  margin-left: 40%;
+}
+.compromiso p {
+  font-size: 15px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .historia {
@@ -488,28 +499,34 @@
   .navFlex {
     display: flex;
     flex-direction: row;
-    width: 90%;
+    width: 95%;
     justify-content: flex-start;
   }
 
+  .mision {
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+  }
   .mision h3 {
-    font-size: 1rem;
+    font-size: 1.6rem;
   }
   .mision p {
-    font-size: 10px;
+    font-size: 13px;
   }
 
   .compromiso h3 {
-    font-size: 1rem;
+    font-size: 1.6rem;
   }
   .compromiso p {
-    font-size: 10px;
+    font-size: 13px;
   }
 
   .publicidad1 img {
     width: 50%;
     height: auto;
     margin-left: 25%;
+    margin-bottom: 25px;
   }
 
   .resize img {
@@ -561,18 +578,39 @@
     grid-gap: 30px;
     padding: 35px 0px;
   }
+
+  .integral {
+    position: relative;
+    justify-self: center;
+  }
+
+  .redes {
+    position: relative;
+    justify-self: center;
+  }
+  .redes h2 {
+    text-align: center;
+  }
 }
 @media (min-width: 576px) and (max-width: 767px) {
+  .navFlex {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    justify-content: flex-start;
+  }
+
   .publicidad1 img {
     width: 50%;
     height: auto;
     margin-left: 25%;
+    margin-bottom: 25px;
   }
 
   .carrusel {
-    width: 60%;
+    width: 80%;
     height: auto;
-    margin-left: 20%;
+    margin-left: 10%;
   }
 
   .carousel-control-next-icon:after {
@@ -618,7 +656,9 @@
   .redes {
     position: relative;
     justify-self: center;
-    background-color: greenyellow;
+  }
+  .redes h2 {
+    text-align: center;
   }
 
   .red-social {
@@ -626,8 +666,27 @@
     justify-content: center;
   }
 
+  .mision {
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+  }
+  .mision h3 {
+    font-size: 1.6rem;
+  }
+  .mision p {
+    font-size: 13px;
+  }
+
+  .compromiso h3 {
+    font-size: 1.6rem;
+  }
+  .compromiso p {
+    font-size: 13px;
+  }
   .compromiso img {
-    width: 10%;
+    width: 20%;
+    margin-left: 40%;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -641,6 +700,7 @@
   .publicidad1 p {
     text-align: center;
     font-size: 0.8rem;
+    background-color: black;
   }
   .publicidad1 img {
     width: 100%;
@@ -649,9 +709,9 @@
   }
 
   .carrusel {
-    width: 70%;
+    width: 80%;
     height: auto;
-    margin-left: 15%;
+    margin-left: 10%;
   }
 
   .tamanio {
@@ -680,6 +740,17 @@
 
   .promos {
     font-size: 1.5rem;
+  }
+
+  .compromiso h3 {
+    font-size: 1.6rem;
+  }
+  .compromiso p {
+    font-size: 13px;
+  }
+  .compromiso img {
+    width: 20%;
+    margin-left: 40%;
   }
 }
 @media (min-width: 992px) {
@@ -748,15 +819,6 @@
     justify-self: right;
   }
 }
-.nosotros {
-  text-align: center;
-}
-.nosotros iframe {
-  width: 60%;
-  margin-left: 20%;
-  height: auto;
-}
-
 /*mixin sin parametros*/
 .reborde, .reborde2 {
   border-radius: 10px;
