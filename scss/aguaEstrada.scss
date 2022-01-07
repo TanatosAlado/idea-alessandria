@@ -13,8 +13,8 @@
 .navFlex{
 	display: flex;
 	flex-direction: row;
-	width: 90%;
-	justify-content: flex-start;
+	width: 95%;
+	justify-content: flex-end;
     li{
         list-style-type: none;
         padding: 15px;
@@ -43,7 +43,8 @@
 }
 
 .body{
-    background-image: url(../assets/aguaclara.jpg);
+    //background-image: url(../assets/aguaclara.jpg);
+    background-color: lightskyblue;
     background-repeat: no-repeat;
     background-size:cover;
     position: relative;
@@ -151,6 +152,7 @@
     p{
         font-size: 1.3rem;
         margin-bottom: 35px;
+        text-align: center;
     }
 }
 
@@ -565,10 +567,12 @@ height: 250px;
         }
     }
 
-    .resize img{
-        display: flex;
-        width: 150%;
-    }
+    .resize{
+        img{
+            display: flex;
+            width: 150%;
+        }
+    } 
 
     .carrusel{
         width: 80%;
@@ -579,10 +583,6 @@ height: 250px;
     .tamanio{
         width: 80%;
         margin-left: 10%;
-    }
-
-    .simbolomas{
-        width: 20%;
     }
 
     .carousel-control-next-icon:after
@@ -612,17 +612,21 @@ height: 250px;
     .promos{
         font-size: 1rem;
     }
+    
+    .pie-pagina{
+        .grupo-1{
+            width: 90%;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 30px;
+            padding: 35px 0px;
+        } 
+    }    
+
 }
 
 
 
-@media (min-width:576px){
-    .navFlex{
-        display: flex;
-        flex-direction: row;
-        width: 90%;
-        justify-content:flex-start;
-    }
+@media (min-width:576px) and (max-width:767px) {
 
     .publicidad1{
         img{
@@ -665,10 +669,7 @@ height: 250px;
         width: 80%;
         margin-left: 10%;
     }
-    
-}
 
-@media screen and (max-width:768px) {
     .pie-pagina{
         .grupo-1{
             width: 90%;
@@ -686,20 +687,27 @@ height: 250px;
     .redes{
         position: relative;
         justify-self:center;
+        background-color: greenyellow;
     }
+
+    .red-social{
+        position: relative;
+        justify-content: center;
+    }
+
     .compromiso{
         img{
             width: 10%;
         }
     }
+    
 }
 
-
-@media (min-width:768px) {
+@media (min-width:768px) and (max-width:991px) {
     .navFlex{
         display: flex;
         flex-direction: row;
-        width: 90%;
+        width: 95%;
         justify-content:flex-end;
     }
 
@@ -752,12 +760,13 @@ height: 250px;
 
 
 @media (min-width:992px) {
-    .navFlex{
+    .navFlex .alineacion{
         display: flex;
         flex-direction: row;
         width: 90%;
         justify-content:flex-end;
     }
+
 
     .mision{
         h3{
@@ -796,6 +805,32 @@ height: 250px;
     .promos{
         font-size: 2rem;
     }
+    
+    .carousel-control-next-icon:after
+    {
+        content: '>';
+        font-size: 50px;
+        color: green;
+    }
+
+    .carousel-control-prev-icon:after {
+        content: '<';
+        font-size: 50px;
+        color: green;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        height: 100px;
+        width: 100px;
+        outline: black;
+    }
+    
+.redes{
+    position: relative;
+    justify-self:right;
+}
+
 }
 
 //Fin Responsive
@@ -810,11 +845,6 @@ height: 250px;
         height: auto;
     }
 } 
-
-.redes{
-    position: relative;
-    justify-self:right;
-}
 
 
 
@@ -952,4 +982,6 @@ $estilos: (
     }
 }
 
-
+.margen{
+    margin-left: 20px;
+}

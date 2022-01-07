@@ -2,6 +2,13 @@
   font-family: "letraBold";
   src: url("../assets/Dongle-Bold.ttf");
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16 px;
+}
+
 .navFlex {
   display: flex;
   flex-direction: row;
@@ -35,7 +42,7 @@
 }
 
 .body {
-  background-image: url(../assets/aguaclara.jpg);
+  background-color: lightskyblue;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -485,13 +492,57 @@
     height: auto;
     margin-left: 10%;
   }
+
+  .tamanio {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .carousel-control-next-icon:after {
+    content: ">";
+    font-size: 25px;
+    color: green;
+  }
+
+  .carousel-control-prev-icon:after {
+    content: "<";
+    font-size: 25px;
+    color: green;
+  }
+
+  .carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 50px;
+    width: 50px;
+    outline: black;
+  }
+
+  .espacio img {
+    width: 50%;
+  }
+
+  .promos {
+    font-size: 1rem;
+  }
+
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
 }
-@media (min-width: 576px) {
+@media (min-width: 576px) and (max-width: 767px) {
   .navFlex {
     display: flex;
     flex-direction: row;
     width: 90%;
     justify-content: flex-start;
+  }
+
+  .perepe img {
+    position: relative;
+    justify-content: right;
   }
 
   .publicidad1 img {
@@ -505,8 +556,63 @@
     height: auto;
     margin-left: 20%;
   }
+
+  .carousel-control-next-icon:after {
+    content: ">";
+    font-size: 35px;
+    color: green;
+  }
+
+  .carousel-control-prev-icon:after {
+    content: "<";
+    font-size: 35px;
+    color: green;
+  }
+
+  .carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 75px;
+    width: 75px;
+    outline: black;
+  }
+
+  .promos {
+    font-size: 1rem;
+  }
+
+  .tamanio {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+
+  .integral {
+    position: relative;
+    justify-self: center;
+  }
+
+  .redes {
+    position: relative;
+    justify-self: center;
+    background-color: greenyellow;
+  }
+
+  .red-social {
+    position: relative;
+    justify-content: center;
+  }
+
+  .compromiso img {
+    width: 10%;
+  }
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .navFlex {
     display: flex;
     flex-direction: row;
@@ -516,6 +622,7 @@
 
   .publicidad1 p {
     text-align: center;
+    font-size: 0.8rem;
   }
   .publicidad1 img {
     width: 100%;
@@ -532,6 +639,29 @@
   .tamanio {
     width: 40%;
     margin-left: 30%;
+  }
+
+  .carousel-control-next-icon:after {
+    content: ">";
+    font-size: 45px;
+    color: green;
+  }
+
+  .carousel-control-prev-icon:after {
+    content: "<";
+    font-size: 45px;
+    color: green;
+  }
+
+  .carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+    outline: black;
+  }
+
+  .promos {
+    font-size: 1.5rem;
   }
 }
 @media (min-width: 992px) {
@@ -553,6 +683,9 @@
     width: 100%;
     margin-left: 0%;
   }
+  .publicidad1 p {
+    font-size: 1.3rem;
+  }
 
   .compromiso img {
     width: 40%;
@@ -568,27 +701,33 @@
     width: 30%;
     margin-left: 5%;
   }
-}
-@media screen and (max-width: 768px) {
-  .pie-pagina .grupo-1 {
-    width: 90%;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 30px;
-    padding: 35px 0px;
+
+  .promos {
+    font-size: 2rem;
   }
 
-  .integral {
-    position: relative;
-    justify-self: center;
+  .carousel-control-next-icon:after {
+    content: ">";
+    font-size: 50px;
+    color: green;
+  }
+
+  .carousel-control-prev-icon:after {
+    content: "<";
+    font-size: 50px;
+    color: green;
+  }
+
+  .carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+    outline: black;
   }
 
   .redes {
     position: relative;
-    justify-self: center;
-  }
-
-  .compromiso img {
-    width: 10%;
+    justify-self: right;
   }
 }
 .nosotros {
@@ -598,18 +737,6 @@
   width: 60%;
   margin-left: 20%;
   height: auto;
-}
-
-.redes {
-  position: relative;
-  justify-self: right;
-}
-
-.velocidad {
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
 }
 
 /*mixin sin parametros*/
@@ -724,11 +851,4 @@
 .galeria__promos .galeria__promo .galeria__imagenPromo {
   width: 250px;
   height: 250px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-size: 16 px;
 }/*# sourceMappingURL=aguaEstrada.css.map */
