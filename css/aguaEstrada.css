@@ -25,6 +25,49 @@
   text-decoration: none;
 }
 
+.repartidor img {
+  position: absolute;
+  width: 300px;
+  height: auto;
+  margin-left: 40%;
+}
+
+.alert {
+  width: 100%;
+  height: 400px;
+  padding: 20px;
+  margin-bottom: 15px;
+  background-color: rgba(242, 250, 250, 0.5);
+}
+.alert img {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  margin-left: 600px;
+}
+.alert p {
+  font-size: 1rem;
+  color: black;
+  text-align: center;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: red;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}
+
 .navItem {
   text-decoration: underline;
   text-decoration-color: red;
@@ -43,8 +86,6 @@
 
 .body {
   background-color: lightskyblue;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
 }
 
@@ -343,7 +384,6 @@
 }
 
 .bodyContacto {
-  background-image: url(../images/fondoplaya.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -705,8 +745,8 @@
     font-size: 13px;
   }
   .compromiso img {
-    width: 20%;
-    margin-left: 40%;
+    width: 10%;
+    margin-left: 45%;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -773,8 +813,8 @@
     font-size: 13px;
   }
   .compromiso img {
-    width: 20%;
-    margin-left: 40%;
+    width: 10%;
+    margin-left: 45%;
   }
 }
 @media (min-width: 992px) {
