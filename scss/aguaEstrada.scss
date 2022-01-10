@@ -10,6 +10,80 @@
 
 //Inicio General
 
+.overlay{
+    opacity: 0;
+    width: 30%;
+    height: 550px;
+    margin-left: 35%;
+    margin-top: 10px;
+    background: rgb(255, 255, 255,0.9);
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    img{
+        width: 100%;
+        height: auto;
+    }
+    input{
+        width: 20%;
+    }
+}
+
+.busqueda{
+    .overlay{
+        animation-name: aparecer;
+        animation-duration: 2s;
+        animation-delay: 3s;
+        animation-name: aparecer2;
+        animation-duration: 20s;
+        animation-delay: 5s;
+    }
+}
+
+@keyframes aparecer{
+    0%{ opacity: 0;}
+    25% {opacity: 0.25;}
+    50%{ opacity: 0.50;}
+    75%{opacity: 0.75;}
+    100%{opacity: 0.99;}
+}
+
+
+@keyframes aparecer2{
+    0%{ opacity: 0.99;}
+    100%{opacity: 1;}
+}
+
+.popup{
+    text-align: center;
+    .btn-cerrar-popup{
+        font-size: 16px;
+        line-height: 16px;
+        display: block;
+        text-align: right;
+        color: green;
+        &:hover{
+            color: red;
+        }
+    }
+}
+
+.modal{
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: inline-block !important;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(255,255,255, 0.3)
+}
+
 .navFlex{
 	display: flex;
 	flex-direction: row;
@@ -26,8 +100,8 @@
 }
 
 .repartidor{
+    position: fixed;
     img{
-        position: absolute;
         width: 300px;
         height: auto;
         margin-left: 40%;
@@ -35,16 +109,16 @@
 }
 
 .alert {
-    width: 100%;
-    height: 400px;
+    width: 40%;
+    height: auto;
     padding: 20px;
     margin-bottom: 15px;
+    margin-left: 30%;
     background-color: rgba(242, 250, 250, 0.5);
     img{
-        width: 400px;
-        height: 400px;
+        width: 100%;
+        height: auto;
         position: relative;
-        margin-left: 600px;
     }
     p{
         font-size: 1rem;
@@ -56,6 +130,7 @@
   /* The close button */
   .closebtn {
     margin-left: 15px;
+    margin-right: 15px;
     color: red;
     font-weight: bold;
     float: right;
