@@ -11,10 +11,11 @@
 //Inicio General
 
 .overlay{
+    //background-color: blue;
     opacity: 0;
-    width: 30%;
+    width: 40%;
     height: 550px;
-    margin-left: 35%;
+    margin-left: 30%;
     margin-top: 10px;
     background: rgb(255, 255, 255,0.9);
     position: fixed;
@@ -22,7 +23,6 @@
     bottom:0;
     left:0;
     right:0;
-    display: flex;
     align-items: center;
     justify-content: center;
     z-index: 1;
@@ -30,8 +30,8 @@
         width: 100%;
         height: auto;
     }
-    input{
-        width: 20%;
+    a{
+        color: black;
     }
 }
 
@@ -163,7 +163,8 @@
 }
 
 .body{
-    background-color: lightskyblue;
+    //background-color: lightskyblue;
+    background-color: lightgrey;
   //  background-image: url(../images/IMG_1982.JPG);
   //  background-repeat: no-repeat;
   //  background-size:cover;
@@ -680,6 +681,30 @@ height: 250px;
         justify-content:flex-start;
     }
 
+    .overlay{
+        opacity: 0;
+        width: 70%;
+        height: 370px;
+        margin-left: 15%;
+        margin-top: 10px;
+        background: rgb(255, 255, 255,0.9);
+        position: fixed;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        img{
+            width: 100%;
+            height: auto;
+        }
+        a{
+            color: black;
+        }
+    }
+
     .mision{
         width: 90%;
         height: auto;
@@ -804,6 +829,30 @@ height: 250px;
         justify-content: flex-start;
     }
 
+    .overlay{
+        opacity: 0;
+        width: 60%;
+        height: 400px;
+        margin-left: 20%;
+        margin-top: 10px;
+        background: rgb(255, 255, 255,0.9);
+        position: fixed;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        img{
+            width: 100%;
+            height: auto;
+        }
+        a{
+            color: black;
+        }
+    }
+
     .publicidad1{
         img{
             width: 50%;
@@ -908,6 +957,30 @@ height: 250px;
         flex-direction: row;
         width: 95%;
         justify-content:flex-end;
+    }
+
+    .overlay{
+        opacity: 0;
+        width: 50%;
+        height: 450px;
+        margin-left: 25%;
+        margin-top: 10px;
+        background: rgb(255, 255, 255,0.9);
+        position: fixed;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        img{
+            width: 100%;
+            height: auto;
+        }
+        a{
+            color: black;
+        }
     }
 
     .publicidad1{
