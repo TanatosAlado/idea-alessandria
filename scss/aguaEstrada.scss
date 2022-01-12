@@ -512,6 +512,7 @@ height: 250px;
     padding-bottom: 10px;
     text-align: center;
 }
+
 //Fin Index
 
 //Inicio Contacto
@@ -607,7 +608,6 @@ height: 250px;
     h3{
         margin-top: 40px;
         text-align: center;
-
     }
 }
 
@@ -1119,17 +1119,23 @@ height: 250px;
     }
     
     .minerales{
-        background-color: grey;
+        background-color: lightgrey;
     }
     .diario{
-        background-color: grey;
+        background-color: lightgrey;
     }
     
     .lactancia{
         background-color: white;
     }
-    
+    .fondoIndex{
+        background-image: url('../assets/fondoazul.jpg');
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+
 }
+
 
 
 @media (min-width:992px) {
@@ -1146,7 +1152,7 @@ height: 250px;
     }
     
     .minerales{
-        background-color: grey;
+        background-color: lightgrey;
     }
     
     .diario{
@@ -1154,7 +1160,7 @@ height: 250px;
     }
     
     .lactancia{
-        background-color: grey;
+        background-color: lightgrey;
     }
 
     .mision{
@@ -1228,6 +1234,12 @@ height: 250px;
         font-size: 1.5rem;
     }   
 }  
+
+.fondoIndex{
+    background-image: url('../assets/fondoazul.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
 
 }
 
@@ -1318,14 +1330,16 @@ $estilos: (
         font-size: 1.5rem;
         width: 80%;
         margin-left: 10%;
-        background-color: lightgreen;
+        background: linear-gradient(#dcecb5, #a8cf45);
+        //background-color: lightgreen;
     }
 }
 
 .precios{
     margin-top: 40px;
     text-align: center;
-    background-color: lightgreen;
+    //background-color: lightgreen;
+    background: linear-gradient(#dcecb5, #a8cf45);
 }
 
 .centrar{
