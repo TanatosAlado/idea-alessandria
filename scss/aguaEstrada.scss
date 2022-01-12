@@ -784,8 +784,8 @@ height: 250px;
     }
     
     .tamanio{
-        width: 80%;
-        margin-left: 10%;
+        width: 65%;
+        margin-left: 5%;
     }
 
     .carousel-control-next-icon:after
@@ -844,6 +844,16 @@ height: 250px;
     }
     .nosotros{
         text-align: center;
+    }   
+    
+    .fondofinal{
+        background-image: url('../images/fondoplaya4.jpg');
+        background-repeat: no-repeat;
+        background-size:cover;
+        p{
+            text-align: center;
+            font-size: 0.9rem;
+        }
     }
 
 }
@@ -858,11 +868,18 @@ height: 250px;
         }
     }
 
+
     .fondofinal{
-        background-image: url('../images/fondoplaya.jpg');
+        background-image: url('../images/fondoplaya3.jpg');
         background-repeat: no-repeat;
-        background-size:contain;
+        background-size:cover;
+        p{
+            text-align: center;
+            font-size: 1.2rem;
+        }
     }
+
+
 
     .navFlex{
         display: flex;
@@ -940,8 +957,8 @@ height: 250px;
     }
 
     .tamanio{
-        width: 80%;
-        margin-left: 10%;
+        width: 40%;
+        margin-left: 5%;
     }
 
     .pie-pagina{
@@ -997,6 +1014,7 @@ height: 250px;
             margin-left: 45%;
         }
     }
+
     
 }
 
@@ -1244,7 +1262,11 @@ height: 250px;
 }
 
 //Fin Responsive
-
+.tituloBlanco{
+    p{
+        color: white;
+    }
+}
 
 /*mixin sin parametros*/
 @mixin crearbordes() {

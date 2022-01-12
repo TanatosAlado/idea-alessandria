@@ -717,8 +717,8 @@
   }
 
   .tamanio {
-    width: 80%;
-    margin-left: 10%;
+    width: 65%;
+    margin-left: 5%;
   }
 
   .carousel-control-next-icon:after {
@@ -776,6 +776,16 @@
   .nosotros {
     text-align: center;
   }
+
+  .fondofinal {
+    background-image: url("../images/fondoplaya4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .fondofinal p {
+    text-align: center;
+    font-size: 0.9rem;
+  }
 }
 @media (min-width: 576px) and (max-width: 767px) {
   .promo__productos .promo__producto {
@@ -783,9 +793,13 @@
   }
 
   .fondofinal {
-    background-image: url("../images/fondoplaya.jpg");
+    background-image: url("../images/fondoplaya3.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+  }
+  .fondofinal p {
+    text-align: center;
+    font-size: 1.2rem;
   }
 
   .navFlex {
@@ -861,8 +875,8 @@
   }
 
   .tamanio {
-    width: 80%;
-    margin-left: 10%;
+    width: 40%;
+    margin-left: 5%;
   }
 
   .pie-pagina .grupo-1 {
@@ -1145,6 +1159,10 @@
     background-size: cover;
   }
 }
+.tituloBlanco p {
+  color: white;
+}
+
 /*mixin sin parametros*/
 .reborde, .reborde2 {
   border-radius: 10px;
