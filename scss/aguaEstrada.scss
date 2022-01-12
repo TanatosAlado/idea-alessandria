@@ -175,6 +175,7 @@
 .body{
     //background-color: lightskyblue;
     background-color: lightgrey;
+   // background-image: url('../images/muro.jpg');
   //  background-image: url(../images/IMG_1982.JPG);
   //  background-repeat: no-repeat;
   //  background-size:cover;
@@ -378,10 +379,10 @@
 .carousel-control-next-icon {
     height: 100px;
     width: 100px;
-    outline: white;
+    outline: green;
     background-size: 100%, 100%;
     border-radius: 50%;
-    border: 1px solid white;
+    border: 2px solid green; 
     background-image: none;
 }
 
@@ -389,7 +390,7 @@
 {
     content: '>';
     font-size: 55px;
-    color: white;
+    color: green;
     //color: linear-gradient(#dcecb5, #a8cf45);
     //color: green;
 }
@@ -397,7 +398,7 @@
 .carousel-control-prev-icon:after {
     content: '<';
     font-size: 55px;
-    color: white;
+    color: green;
    // color: green;
    // color: linear-gradient(#dcecb5, #a8cf45);
 }
@@ -1254,7 +1255,7 @@ height: 250px;
 }  
 
 .fondoIndex{
-    background-image: url('../assets/fondoazul.jpg');
+    background-image: url('../images/muro.jpg');
     background-repeat: no-repeat;
     background-size:cover;
 }
@@ -1264,7 +1265,7 @@ height: 250px;
 //Fin Responsive
 .tituloBlanco{
     p{
-        color: white;
+        color: black;
     }
 }
 
