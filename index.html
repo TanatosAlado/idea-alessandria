@@ -45,13 +45,7 @@
         <!--Inicio Presentación de la Web-->
         <div class ="container espacio">
             <img src="assets/logo.png" alt="Logo">
-            <!--
-            <img src="assets/agua2.png" class="animate__animated animate__flip" alt="Agua">
-            <img src="assets/estrada.png" class="animate__animated animate__backInLeft velocidad" alt="Estrada"> 
-            <img src="assets/+ vida.png" class="animate__animated animate__backInRight velocidad" alt="+ vida">
-            -->
-            <p>Desde Llambi Campbell para Argentina</p>
-            
+            <p>Desde Llambi Campbell para Argentina</p>   
         </div>
 
         <section class="busqueda">
@@ -69,24 +63,58 @@
     
         <!--Fin Presentación de la Web-->
         <!--Inicio Publicidades y Carrusel con novedades-->
-        <section class="fondoIndex">
+        <section>
             <p class="container promos"> 
                 Novedades del Mes
             </p>
-            <div class="container">
+            <div class="container fondoIndex">
                 <div class="row justify-content-center">
                     <div class="col-8 col-sm-8 col-md-2 col-lg-2 border border-secondary rounded fondopubli">
-                        <div class="container">
-                            <aside class="publicidad1">
-                                <p>Auspiciantes</p>
-                                <a href="https://www.alicana.com.ar" target="_blank"><img class="zoom" src="assets/alicana2.png"></a>
-                            </aside>
-                        </div>
-                        <div class="container">
-                            <aside class="publicidad1 margenInferior">
-                                <a href="https://andreshosch.github.io/boostrap/" target="_blank"><img class="zoom" src="assets/tonini.png"></a>
-                            </aside>
-                        </div>
+
+                        <ul>
+
+
+                            <li>
+                                <label for="myCheck">Checkbox:</label> 
+                                <input type="checkbox" id="myCheck" onclick="myFunction()">
+                            </li>
+                            <li>
+                                <label for="myCheck2">Sodio:</label> 
+                                <input type="checkbox" id="myCheck2" onclick="myFunction2()"> 
+                            </li>
+
+                        </ul>
+                    
+        
+
+                        <p id="text" style="display:none">Checkbox is CHECKED!</p>
+                        <p id="text2" style="display:none">Chequeado</p>
+
+
+                        <script>
+                            function myFunction() {
+                              var checkBox = document.getElementById("myCheck");
+                              var text = document.getElementById("text");
+                              if (checkBox.checked == true){
+                                text.style.display = "block";
+                              } else {
+                                 text.style.display = "none";
+                              }
+                            }
+                            </script>
+                            
+                            <script>
+                            function myFunction2() {
+                              var checkBox = document.getElementById("myCheck2");
+                              var text = document.getElementById("text2");
+                              if (checkBox.checked == true){
+                                text.style.display = "block";
+                              } else {
+                                 text.style.display = "none";
+                              }
+                            }
+                            </script>
+
                     </div>
                     <div class="col-12 col-sm-12 col-md-8 col-lg-8">
                         <div class="cntainer ubicacion">
@@ -129,6 +157,16 @@
                         <div class="container">
                             <aside class="publicidad1">
                                 <p>Auspiciantes</p>
+                                <a href="https://www.alicana.com.ar" target="_blank"><img class="zoom" src="assets/alicana2.png"></a>
+                            </aside>
+                        </div>
+                        <div class="container">
+                            <aside class="publicidad1 margenInferior">
+                                <a href="https://andreshosch.github.io/boostrap/" target="_blank"><img class="zoom" src="assets/tonini.png"></a>
+                            </aside>
+                        </div>
+                        <div class="container">
+                            <aside class="publicidad1">
                                 <a href="https://instagram.com/viverobellaflor?utm_medium=copy_link" target="_blank"><img class="zoom" src="assets/bella flor.png"></a>
                             </aside>
                         </div>
@@ -213,6 +251,9 @@
             </div>
         </footer>
         <!--Fin Footer-->
+
+
+
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script src="/assets/js/sweetAlert.js"></script>
