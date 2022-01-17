@@ -5,7 +5,7 @@
     padding :  0 ;
     -webkit-box-sizing : border-box;
             box-sizing : border-box;
-    font-size :  16 px ;
+    font-size :  16px ;
   }
 
 //Inicio General
@@ -16,6 +16,18 @@
     p{
         text-align: center;
         font-size: 1.5rem;
+    }
+}
+
+.orden{
+    p{
+        text-align: center;
+    }
+    ul{
+        padding-left: 0px;
+    }
+    li{
+        list-style-type: none;
     }
 }
 
@@ -1076,6 +1088,15 @@ height: 250px;
         justify-content:flex-end;
     }
 
+    .orden{
+        p{
+            font-size: 0.8rem;
+        }
+        label{
+            font-size: 0.6rem;
+        }
+    }
+
     .fondofinal{
         background-image: url('../images/fondoplaya.jpg');
         background-repeat: no-repeat;
@@ -1249,6 +1270,15 @@ height: 250px;
         flex-direction: row;
         width: 90%;
         justify-content:flex-end;
+    }
+
+    .orden{
+        p{
+            font-size: 1rem;
+        }
+        label{
+            font-size: 0.8rem;
+        }
     }
 
     .requerimiento{
