@@ -8,7 +8,6 @@
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-size: 16px;
 }
 
 .fondofinal {
@@ -308,6 +307,24 @@
   margin-bottom: 30px;
 }
 
+.calzar img {
+  width: 80%;
+  margin-left: 10%;
+  padding-top: 20px;
+}
+
+.centrar {
+  text-align: center;
+}
+
+.dimension {
+  width: 100%;
+}
+
+.margen {
+  margin-left: 20px;
+}
+
 .fondopubli {
   background: linear-gradient(#dcecb5, #a8cf45);
 }
@@ -512,6 +529,10 @@
   text-align: center;
 }
 
+.tituloBlanco p {
+  color: black;
+}
+
 .bodyContacto {
   background-repeat: no-repeat;
   background-size: cover;
@@ -594,6 +615,12 @@
   text-align: center;
 }
 
+.precios {
+  margin-top: 40px;
+  text-align: center;
+  background: linear-gradient(#dcecb5, #a8cf45);
+}
+
 .mision {
   position: relative;
   display: inline-block;
@@ -663,6 +690,32 @@
 
 .caminoatumesa {
   margin-top: 25px;
+  text-align: center;
+}
+
+.entregas {
+  position: relative;
+  margin-top: 50px;
+}
+.entregas img {
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 25px;
+}
+.entregas p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.entregas h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  width: 80%;
+  margin-left: 10%;
+  background: linear-gradient(#dcecb5, #a8cf45);
+}
+
+.titulosTrat h1 {
+  font-family: "letraBold";
   text-align: center;
 }
 
@@ -1285,10 +1338,6 @@
     background-size: cover;
   }
 }
-.tituloBlanco p {
-  color: black;
-}
-
 /*mixin sin parametros*/
 .reborde, .reborde2 {
   border-radius: 10px;
@@ -1307,62 +1356,6 @@
 .estiloMap p {
   padding: 10px;
   text-align: center;
-}
-
-.calzar img {
-  width: 80%;
-  margin-left: 10%;
-  padding-top: 20px;
-}
-
-.titulosTrat h1 {
-  font-family: "letraBold";
-  text-align: center;
-}
-
-.entregas {
-  position: relative;
-  margin-top: 50px;
-}
-.entregas img {
-  width: 80%;
-  margin-left: 10%;
-  margin-bottom: 25px;
-}
-.entregas p {
-  text-align: center;
-  font-size: 1.5rem;
-}
-.entregas h3 {
-  text-align: center;
-  font-size: 1.5rem;
-  width: 80%;
-  margin-left: 10%;
-  background: linear-gradient(#dcecb5, #a8cf45);
-}
-
-.precios {
-  margin-top: 40px;
-  text-align: center;
-  background: linear-gradient(#dcecb5, #a8cf45);
-}
-
-.centrar {
-  text-align: center;
-}
-
-.dimension {
-  width: 100%;
-}
-
-.boxPrueba {
-  width: auto;
-  height: auto;
-  position: relative;
-  background-image: url("../images/promo43.jpg");
-}
-.boxPrueba:hover {
-  background-image: url("../images/nieve.jpg");
 }
 
 .galeria__promos {
@@ -1386,10 +1379,6 @@
 .galeria__promos .galeria__promo .galeria__imagenPromo {
   width: 250px;
   height: 250px;
-}
-
-.margen {
-  margin-left: 20px;
 }
 
 /*# sourceMappingURL=aguaEstrada.css.map */
