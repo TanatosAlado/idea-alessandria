@@ -7,6 +7,16 @@
             box-sizing : border-box;
   }
 
+.video{
+    video{
+        margin-left: 35%;
+    }
+    p{
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
 //Inicio General
 .fondofinal{
     background-image: url('../images/fondoplaya.jpg');
@@ -910,7 +920,7 @@ height: 250px;
         p{
             text-align: center;
         }
-    }
+    }   
 
     .bgtoma, .bgcarbon, .bgradiacion, .bgozono{
         background-color: white;
